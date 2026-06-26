@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MedArchive — парсер прайсов</title>
+<style>
+  :root { --bg:#0f1419; --panel:#1a212b; --line:#2a3441; --txt:#e6edf3; --muted:#8b98a8;
+          --accent:#3b82f6; --ok:#22c55e; --warn:#f59e0b; --err:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+         background:var(--bg); color:var(--txt); }
+  header { padding:18px 24px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px; }
+  header h1 { font-size:18px; margin:0; font-weight:650; }
+  header .sub { color:var(--muted); font-size:13px; }
+  nav { display:flex; gap:4px; padding:10px 24px 0; border-bottom:1px solid var(--line); }
+  nav button { background:none; border:none; color:var(--muted); padding:9px 14px; cursor:pointer;
+               border-bottom:2px solid transparent; font-size:14px; }
+  nav button.active { color:var(--txt); border-bottom-color:var(--accent); }
+  main { padding:24px; max-width:1100px; margin:0 auto; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px; margin-bottom:18px; }
+  .drop { border:2px dashed var(--line); border-radius:10px; padding:40px; text-align:center; color:var(--muted);
+          transition:.15s; cursor:pointer; }
+  .drop.hover { border-color:var(--accent); background:rgba(59,130,246,.06); color:var(--txt); }
+  input[type=text]{ width:100%; padding:11px 13px; background:#0d1217; border:1px solid var(--line);
+                    border-radius:8px; color:var(--txt); font-size:14px; }
+  button.primary{ background:var(--accent); color:#fff; border:none; padding:9px 16px; border-radius:8px; cursor:pointer; }
+  table{ width:100%; border-collapse:collapse; font-size:13px; }
+  th,td{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ color:var(--muted); font-weight:550; position:sticky; top:0; background:var(--panel); }
+  .tag{ display:inline-block; padding:2px 8px; border-radius:20px; font-size:12px; }
+  .t-done{ background:rgba(34,197,94,.15); color:var(--ok); }
+  .t-needs_review{ background:rgba(245,158,11,.15); color:var(--warn); }
+  .t-error,.t-dup{ background:rgba(239,68,68,.12); color:var(--err); }
+  .stat-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
+  .stat{ background:#0d1217; border:1px solid var(--line); border-radius:8px; padding:14px; }
+  .stat .n{ font-size:26px; font-weight:680; }
+  .stat .l{ color:var(--muted); font-size:12px; margin-top:2px; }
+  .muted{ color:var(--muted); }
+  .price{ font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .scroll{ max-height:62vh; overflow:auto; border:1px solid var(--line); border-radius:8px; }
+  .hidden{ display:none; }
+  .row-actions{ display:flex; gap:8px; margin:12px 0; }
+  small.code{ color:var(--muted); font-family:ui-monospace,monospace; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏥 MedArchive</h1>
+  <span class="sub">Парсер прайс-листов клиник → структурированная база</span>
+</header>
+<nav>
+  <button data-tab="upload" class="active">Загрузка</button>
+  <button data-tab="search">Поиск</button>
+  <button data-tab="review">Очередь верификации</button>
+  <button data-tab="dash">Дашборд</button>
+</nav>
+<main>
+
+  <section id="upload">
+    <div class="panel">
+      <div id="drop" class="drop">
+        <div style="font-size:32px">📄</div>
+        <p><b>Перетащите файл</b> или нажмите для выбора<br>
+        <span class="muted">PDF · DOCX · XLSX · XLS (включая сканы)</span></p>
+        <input id="file" type="file" accept=".pdf,.docx,.xlsx,.xls" class="hidden" />
+      </div>
+      <div id="up-result" style="margin-top:16px"></div>
+    </div>
+  </section>
+
+  <section id="search" class="hidden">
+    <div class="panel">
+      <input id="q" type="text" placeholder="Поиск услуги или клиники (мин. 2 символа)…" />
+      <div id="search-result" style="margin-top:14px"></div>
+    </div>
+  </section>
+
+  <section id="review" class="hidden">
+    <div class="panel">
+      <div class="row-actions">
+        <button class="primary" data-q="review">Нужна проверка</button>
+        <button class="primary" data-q="unmatched" style="background:#374151">Несопоставленные</button>
+      </div>
+      <div id="review-result"></div>
+    </div>
+  </section>
+
+  <section id="dash" class="hidden">
+    <div class="panel"><div id="dash-result" class="muted">Загрузка…</div></div>
+  </section>
+
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const fmtKzt = v => v==null ? '<span class="muted">—</span>' : Number(v).toLocaleString('ru-RU')+' ₸';
+const esc = s => (s??'').toString().replace(/[<>&]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+// tabs
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  ['upload','search','review','dash'].forEach(t=>$('#'+t).classList.toggle('hidden', t!==b.dataset.tab));
+  if (b.dataset.tab==='dash') loadDash();
+});
+
+// upload
+const drop=$('#drop'), file=$('#file');
+drop.onclick=()=>file.click();
+drop.ondragover=e=>{e.preventDefault();drop.classList.add('hover');};
+drop.ondragleave=()=>drop.classList.remove('hover');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('hover'); if(e.dataTransfer.files[0]) doUpload(e.dataTransfer.files[0]);};
+file.onchange=()=>file.files[0] && doUpload(file.files[0]);
+
+async function doUpload(f){
+  $('#up-result').innerHTML = `<p class="muted">⏳ Обработка <b>${esc(f.name)}</b>… (скан-PDF может занять время)</p>`;
+  const fd=new FormData(); fd.append('file', f);
+  try{
+    const r = await fetch('/upload', {method:'POST', body:fd});
+    const d = await r.json();
+    if(!r.ok){ $('#up-result').innerHTML=`<p class="t-error tag">Ошибка</p> <span>${esc(d.detail||'')}</span>`; return; }
+    $('#up-result').innerHTML = `
+      <table><tbody>
+        <tr><td>Файл</td><td>${esc(d.file_name)} <small class="code">(${d.file_format})</small></td></tr>
+        <tr><td>Партнёр</td><td>${esc(d.partner)}</td></tr>
+        <tr><td>Статус</td><td><span class="tag t-${d.skipped_duplicate?'dup':d.status}">${d.skipped_duplicate?'дубликат':d.status}</span></td></tr>
+        <tr><td>Строк извлечено</td><td>${d.rows_parsed}</td></tr>
+        <tr><td>Записано позиций</td><td>${d.rows_written}</td></tr>
+        <tr><td>На проверку</td><td>${d.rows_needs_review}</td></tr>
+        <tr><td>Пропущено</td><td>${d.rows_dropped}</td></tr>
+        <tr><td>Авто-сопоставлено</td><td>${d.rows_matched}</td></tr>
+      </tbody></table>
+      ${d.warnings?.length ? '<p class="muted">⚠ '+d.warnings.map(esc).join('<br>⚠ ')+'</p>':''}`;
+  }catch(e){ $('#up-result').innerHTML=`<p class="t-error tag">Сбой запроса</p> ${esc(e.message)}`; }
+}
+
+// search
+let st; $('#q').oninput = e => { clearTimeout(st); st=setTimeout(()=>runSearch(e.target.value),250); };
+async function runSearch(q){
+  if((q||'').length<2){ $('#search-result').innerHTML=''; return; }
+  const d = await (await fetch('/search?q='+encodeURIComponent(q))).json();
+  const items = (d.price_items||[]).map(i=>`<tr>
+      <td>${esc(i.service_name_raw)} ${i.service_code_source?'<small class="code">'+esc(i.service_code_source)+'</small>':''}</td>
+      <td class="price">${fmtKzt(i.price_resident_kzt)}</td>
+      <td class="price">${fmtKzt(i.price_nonresident_kzt)}</td>
+      <td>${i.needs_review?'<span class="tag t-needs_review">проверка</span>':''}</td>
+    </tr>`).join('');
+  $('#search-result').innerHTML = `
+    <p class="muted">Клиники: ${(d.partners||[]).map(p=>esc(p.name)).join(', ')||'—'}</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Услуга (как в прайсе)</th><th>Резидент</th><th>Нерезидент</th><th></th></tr></thead>
+      <tbody>${items||'<tr><td colspan=4 class="muted">ничего не найдено</td></tr>'}</tbody>
+    </table></div>`;
+}
+
+// review queue
+document.querySelectorAll('#review [data-q]').forEach(b=>b.onclick=()=>loadQueue(b.dataset.q));
+async function loadQueue(which){
+  $('#review-result').innerHTML='<p class="muted">Загрузка…</p>';
+  const rows = await (await fetch('/'+which)).json();
+  $('#review-result').innerHTML = `<div class="scroll"><table>
+    <thead><tr><th>Услуга</th><th>Резидент</th><th>Нерезидент</th><th>Причина</th></tr></thead>
+    <tbody>${rows.map(i=>`<tr>
+        <td>${esc(i.service_name_raw)} <small class="code">${esc(i.service_code_source||'')}</small></td>
+        <td class="price">${fmtKzt(i.price_resident_kzt)}</td>
+        <td class="price">${fmtKzt(i.price_nonresident_kzt)}</td>
+        <td class="muted">${esc(i.review_reason||(which==='unmatched'?'нет в справочнике':''))}</td>
+      </tr>`).join('')||'<tr><td colspan=4 class="muted">очередь пуста</td></tr>'}</tbody>
+  </table></div>`;
+}
+
+// dashboard
+async function loadDash(){
+  const d = await (await fetch('/stats')).json();
+  const cell=(n,l)=>`<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`;
+  const byStatus = Object.entries(d.documents_by_status||{}).map(([k,v])=>`${k}: ${v}`).join(' · ');
+  $('#dash-result').innerHTML = `
+    <div class="stat-grid">
+      ${cell(d.documents,'документов')}
+      ${cell(d.partners,'партнёров')}
+      ${cell(d.price_items,'позиций цен')}
+      ${cell(d.services,'услуг в справочнике')}
+      ${cell(d.match_rate_pct+'%','авто-нормализация')}
+      ${cell(d.needs_review,'на проверке')}
+    </div>
+    <p class="muted" style="margin-top:14px">Документы по статусам: ${byStatus||'—'}</p>`;
+}
+</script>
+</body>
+</html>
