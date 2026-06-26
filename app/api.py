@@ -18,6 +18,7 @@ from sqlalchemy.orm import Session
 
 from .db import get_session, init_db
 from .models import Partner, PriceDocument, PriceItem, Service
+from .normalize import _key
 from .ocr_api import router as ocr_router
 from .pipeline import ingest_file
 from .schemas import (
@@ -146,6 +147,8 @@ def search(
     db: Session = Depends(get_session),
 ):
     like = f"%{q}%"
+    # Russian-aware term: homoglyphs folded + abbreviations expanded (УЗИ↔ультразвук…).
+    norm = f"%{_key(q)}%"
     partners = db.scalars(
         select(Partner).where(Partner.name.ilike(like)).limit(limit)
     ).all()
@@ -156,7 +159,12 @@ def search(
     ).all()
     items = db.scalars(
         select(PriceItem)
-        .where(PriceItem.service_name_raw.ilike(like), PriceItem.is_active.is_(True))
+        .where(
+            or_(
+                PriceItem.service_name_raw.ilike(like), PriceItem.name_norm.ilike(norm)
+            ),
+            PriceItem.is_active.is_(True),
+        )
         .limit(limit)
     ).all()
     return {

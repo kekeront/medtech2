@@ -160,7 +160,8 @@ def ingest_file(
         if looks_like_header_row(row.name):
             extra.append("row resembles a table header (possible misparse)")
 
-        key = (row.code or _key(row.name)).lower()
+        name_norm = _key(row.name)  # normalized service name for search
+        key = (row.code or name_norm).lower()  # version/dedup key (code preferred)
         prev = latest.get(key)
         is_active, supersede, prev_resident = _version_decision(prev, eff_date)
 
@@ -179,6 +180,7 @@ def ingest_file(
             doc_id=doc.doc_id,
             partner_id=partner.partner_id,
             service_name_raw=row.name,
+            name_norm=name_norm,
             service_code_source=row.code,
             service_id=match.service_id,
             price_resident_kzt=resident,

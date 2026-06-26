@@ -12,6 +12,7 @@ import re
 
 from .base import PriceRow
 from .numbers import parse_price
+from .ruslang import despace
 
 NAME_KW = (
     "наимен",
@@ -57,8 +58,10 @@ def _is_number_cell(s: str) -> bool:
 
 
 def _has(header: str, kws) -> bool:
+    # Space-insensitive: OCR'd Cyrillic headers often split letters ("Н аим ен овани е").
     h = header.lower()
-    return any(k in h for k in kws)
+    hd = despace(header)
+    return any(k in h or k.replace(" ", "") in hd for k in kws)
 
 
 def _find_header(grid: list[list[str]], scan: int = 60) -> int | None:

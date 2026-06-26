@@ -32,14 +32,21 @@ _SECTION_RE = re.compile(
 )
 
 
+# Header/footnote noise that must never be treated as a section title.
+_SECTION_NOISE = ("ндс", "тенге", "цена", "наимен", "единиц", "руб", "зарубежь")
+
+
 def _is_section(text: str) -> bool:
     """Section header: keyword line, or an ALL-CAPS category label (e.g. 'ГЕМАТОЛОГИЯ')."""
     if not text or len(text) > 80:
         return False
+    low = text.lower()
+    if any(n in low for n in _SECTION_NOISE):
+        return False
     if _SECTION_RE.match(text):
         return True
     letters = [c for c in text if c.isalpha()]
-    if len(letters) >= 4 and sum(c.isupper() for c in letters) / len(letters) >= 0.75:
+    if len(letters) >= 5 and sum(c.isupper() for c in letters) / len(letters) >= 0.75:
         return True
     return False
 

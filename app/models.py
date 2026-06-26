@@ -109,6 +109,8 @@ class PriceItem(Base):
     )  # denormalized for query speed (TZ 3.3)
 
     service_name_raw: Mapped[str] = mapped_column(Text, nullable=False)
+    # Russian-normalized form (homoglyphs folded, abbreviations expanded) for robust search.
+    name_norm: Mapped[str | None] = mapped_column(Text, index=True)
     service_code_source: Mapped[str | None] = mapped_column(String(64))
     service_id: Mapped[uuid.UUID | None] = mapped_column(
         ForeignKey("services.service_id"), index=True

@@ -17,10 +17,15 @@ from sqlalchemy.orm import Session
 
 from .config import MATCH_AUTO_THRESHOLD, MATCH_SUGGEST_THRESHOLD
 from .models import Service
+from .parsers.abbreviations import expand_abbreviations
+from .parsers.ruslang import normalize_ru
 
 
 def _key(s: str) -> str:
-    return re.sub(r"\s+", " ", (s or "").lower().strip())
+    # Russian-aware: ё→е, Latin/Cyrillic homoglyphs folded, medical abbreviations
+    # expanded — so OCR'd / abbreviated / full spellings of the same service collapse
+    # to one key for catalogue matching, search and price-history dedup.
+    return expand_abbreviations(normalize_ru(s))
 
 
 @dataclass
