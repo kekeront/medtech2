@@ -28,7 +28,22 @@ from .parsers.detect import (
     partner_from_filename,
 )
 from .tariffs import map_tariffs, to_kzt
-from .validation import is_droppable_name, validate_item
+from .validation import (
+    IMPLAUSIBLE_PRICE,
+    is_droppable_name,
+    looks_like_header_row,
+    validate_item,
+)
+
+
+def _sane(value: float | None, reasons: list[str], which: str) -> float | None:
+    """Clear an implausibly large (OCR-concatenated) price to NULL and record why."""
+    if value is not None and value > IMPLAUSIBLE_PRICE:
+        reasons.append(
+            f"{which} price implausible (suspected OCR error); cleared for manual entry"
+        )
+        return None
+    return value
 
 
 @dataclass
@@ -134,8 +149,16 @@ def ingest_file(
             continue
 
         res_raw, non_raw = map_tariffs(row.prices, parsed.price_labels)
-        resident = to_kzt(res_raw, row.currency)
-        nonresident = to_kzt(non_raw, row.currency)
+        # Clear OCR-garbage prices to NULL so a single bad cell can't overflow the
+        # numeric column / abort the document; the row stays, flagged for review.
+        extra: list[str] = []
+        resident = _sane(to_kzt(res_raw, row.currency), extra, "resident")
+        nonresident = _sane(to_kzt(non_raw, row.currency), extra, "nonresident")
+        price_original = (
+            res_raw if (res_raw is None or res_raw <= IMPLAUSIBLE_PRICE) else None
+        )
+        if looks_like_header_row(row.name):
+            extra.append("row resembles a table header (possible misparse)")
 
         key = (row.code or _key(row.name)).lower()
         prev = latest.get(key)
@@ -149,6 +172,7 @@ def ingest_file(
             previous_resident=prev_resident,
             anomaly_pct=PRICE_ANOMALY_PCT,
         )
+        reasons += extra
         match = matcher.match(row.name)
 
         item = PriceItem(
@@ -159,7 +183,7 @@ def ingest_file(
             service_id=match.service_id,
             price_resident_kzt=resident,
             price_nonresident_kzt=nonresident,
-            price_original=res_raw,
+            price_original=price_original,
             currency_original=row.currency,
             match_method=match.method,
             match_confidence=match.confidence,

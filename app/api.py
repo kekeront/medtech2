@@ -18,6 +18,7 @@ from sqlalchemy.orm import Session
 
 from .db import get_session, init_db
 from .models import Partner, PriceDocument, PriceItem, Service
+from .ocr_api import router as ocr_router
 from .pipeline import ingest_file
 from .schemas import (
     DocumentOut,
@@ -37,6 +38,9 @@ app = FastAPI(
 )
 
 STATIC_DIR = Path(__file__).parent / "static"
+
+
+app.include_router(ocr_router)
 
 
 @app.on_event("startup")

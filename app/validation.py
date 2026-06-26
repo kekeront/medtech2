@@ -9,7 +9,23 @@ from __future__ import annotations
 from datetime import date
 
 # Prices above this are almost certainly OCR digit-concatenation, not real (KZT).
-IMPLAUSIBLE_PRICE = 20_000_000
+# Real medical line items (incl. surgical/IVF packages) stay well below this; values
+# above it are cleared to NULL and flagged so one bad OCR cell can't poison a column.
+IMPLAUSIBLE_PRICE = 50_000_000
+
+# Markers that mean a header/footnote row leaked through as a data row.
+_HEADER_MARKERS = (
+    "наименование",
+    "цена для",
+    "цена с учетом",
+    "единица измер",
+    "прейскурант",
+)
+
+
+def looks_like_header_row(name: str) -> bool:
+    n = (name or "").lower()
+    return any(m in n for m in _HEADER_MARKERS)
 
 
 def validate_item(
