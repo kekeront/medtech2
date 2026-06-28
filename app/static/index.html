@@ -3,32 +3,39 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MedArchive — парсер прайсов</title>
+<title>MedArchive — база услуг и цен клиник-партнёров</title>
 <style>
   :root { --bg:#0f1419; --panel:#1a212b; --line:#2a3441; --txt:#e6edf3; --muted:#8b98a8;
           --accent:#3b82f6; --ok:#22c55e; --warn:#f59e0b; --err:#ef4444; }
   * { box-sizing:border-box; }
   body { margin:0; font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
          background:var(--bg); color:var(--txt); }
-  header { padding:18px 24px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px; }
+  a { color:var(--accent); cursor:pointer; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  header { padding:16px 24px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:14px; }
   header h1 { font-size:18px; margin:0; font-weight:650; }
   header .sub { color:var(--muted); font-size:13px; }
   nav { display:flex; gap:4px; padding:10px 24px 0; border-bottom:1px solid var(--line); }
   nav button { background:none; border:none; color:var(--muted); padding:9px 14px; cursor:pointer;
                border-bottom:2px solid transparent; font-size:14px; }
   nav button.active { color:var(--txt); border-bottom-color:var(--accent); }
-  main { padding:24px; max-width:1100px; margin:0 auto; }
+  main { padding:24px; max-width:1180px; margin:0 auto; }
   .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px; margin-bottom:18px; }
-  .drop { border:2px dashed var(--line); border-radius:10px; padding:40px; text-align:center; color:var(--muted);
+  .drop { border:2px dashed var(--line); border-radius:10px; padding:36px; text-align:center; color:var(--muted);
           transition:.15s; cursor:pointer; }
   .drop.hover { border-color:var(--accent); background:rgba(59,130,246,.06); color:var(--txt); }
   input[type=text]{ width:100%; padding:11px 13px; background:#0d1217; border:1px solid var(--line);
-                    border-radius:8px; color:var(--txt); font-size:14px; }
-  button.primary{ background:var(--accent); color:#fff; border:none; padding:9px 16px; border-radius:8px; cursor:pointer; }
+                    border-radius:8px; color:var(--txt); font-size:15px; }
+  input.edit{ width:96px; padding:5px 7px; background:#0d1217; border:1px solid var(--line);
+              border-radius:6px; color:var(--txt); font-variant-numeric:tabular-nums; }
+  button.primary{ background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:13px; }
+  button.ok{ background:rgba(34,197,94,.15); color:var(--ok); border:1px solid rgba(34,197,94,.3); padding:6px 11px; border-radius:7px; cursor:pointer; font-size:13px; }
+  button.ghost{ background:#222c39; color:var(--muted); border:1px solid var(--line); padding:8px 14px; border-radius:8px; cursor:pointer; font-size:13px; }
   table{ width:100%; border-collapse:collapse; font-size:13px; }
-  th,td{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
-  th{ color:var(--muted); font-weight:550; position:sticky; top:0; background:var(--panel); }
-  .tag{ display:inline-block; padding:2px 8px; border-radius:20px; font-size:12px; }
+  th,td{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:middle; }
+  th{ color:var(--muted); font-weight:550; position:sticky; top:0; background:var(--panel); z-index:1; }
+  tr:hover td{ background:rgba(255,255,255,.02); }
+  .tag{ display:inline-block; padding:2px 8px; border-radius:20px; font-size:12px; white-space:nowrap; }
   .t-done{ background:rgba(34,197,94,.15); color:var(--ok); }
   .t-needs_review{ background:rgba(245,158,11,.15); color:var(--warn); }
   .t-error,.t-dup{ background:rgba(239,68,68,.12); color:var(--err); }
@@ -37,52 +44,76 @@
   .stat .n{ font-size:26px; font-weight:680; }
   .stat .l{ color:var(--muted); font-size:12px; margin-top:2px; }
   .muted{ color:var(--muted); }
-  .price{ font-variant-numeric:tabular-nums; white-space:nowrap; }
-  .scroll{ max-height:62vh; overflow:auto; border:1px solid var(--line); border-radius:8px; }
+  .price{ font-variant-numeric:tabular-nums; white-space:nowrap; text-align:right; }
+  .best{ color:var(--ok); font-weight:600; }
+  .scroll{ max-height:64vh; overflow:auto; border:1px solid var(--line); border-radius:8px; }
   .hidden{ display:none; }
-  .row-actions{ display:flex; gap:8px; margin:12px 0; }
+  .row-actions{ display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
   small.code{ color:var(--muted); font-family:ui-monospace,monospace; }
+  .chip{ display:inline-block; background:#222c39; border:1px solid var(--line); border-radius:20px;
+         padding:5px 12px; margin:3px; cursor:pointer; font-size:13px; }
+  .chip:hover{ border-color:var(--accent); }
+  /* modal */
+  .overlay{ position:fixed; inset:0; background:rgba(0,0,0,.55); display:flex; align-items:center; justify-content:center; padding:24px; z-index:50; }
+  .modal{ background:var(--panel); border:1px solid var(--line); border-radius:12px; width:min(960px,96vw); max-height:90vh; display:flex; flex-direction:column; }
+  .modal-head{ padding:18px 20px; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+  .modal-head h2{ margin:0 0 4px; font-size:17px; }
+  .modal-body{ padding:0 20px 18px; overflow:auto; }
+  .x{ background:none; border:none; color:var(--muted); font-size:22px; cursor:pointer; line-height:1; }
+  .toast{ position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:#0d1217;
+          border:1px solid var(--line); border-radius:8px; padding:10px 16px; z-index:60; opacity:0; transition:.2s; }
+  .toast.show{ opacity:1; }
 </style>
 </head>
 <body>
 <header>
   <h1>🏥 MedArchive</h1>
-  <span class="sub">Парсер прайс-листов клиник → структурированная база</span>
+  <span class="sub">База услуг и цен клиник-партнёров — для страхового специалиста</span>
 </header>
 <nav>
-  <button data-tab="upload" class="active">Загрузка</button>
-  <button data-tab="search">Поиск</button>
-  <button data-tab="review">Очередь верификации</button>
+  <button data-tab="search" class="active">Поиск услуги</button>
+  <button data-tab="partners">Партнёры</button>
+  <button data-tab="review">Верификация</button>
+  <button data-tab="upload">Загрузка</button>
   <button data-tab="dash">Дашборд</button>
 </nav>
 <main>
 
-  <section id="upload">
+  <section id="search">
     <div class="panel">
-      <div id="drop" class="drop">
-        <div style="font-size:32px">📄</div>
-        <p><b>Перетащите файл</b> или нажмите для выбора<br>
-        <span class="muted">PDF · DOCX · XLSX · XLS (включая сканы)</span></p>
-        <input id="file" type="file" accept=".pdf,.docx,.xlsx,.xls" class="hidden" />
-      </div>
-      <div id="up-result" style="margin-top:16px"></div>
+      <input id="q" type="text" placeholder="Какую услугу ищем? напр. УЗИ сердца, приём кардиолога, ОАК…" autofocus />
+      <p class="muted" style="margin:8px 2px 0">Подсказка: поиск понимает сокращения — «УЗИ» найдёт «ультразвуковое исследование», «ЭКГ» → «электрокардиография».</p>
+      <div id="search-result" style="margin-top:14px"></div>
     </div>
   </section>
 
-  <section id="search" class="hidden">
+  <section id="partners" class="hidden">
     <div class="panel">
-      <input id="q" type="text" placeholder="Поиск услуги или клиники (мин. 2 символа)…" />
-      <div id="search-result" style="margin-top:14px"></div>
+      <p class="muted">Выберите клинику-партнёра, чтобы открыть её полный прайс и контакты.</p>
+      <div id="partner-chips" style="margin-top:8px"></div>
     </div>
   </section>
 
   <section id="review" class="hidden">
     <div class="panel">
       <div class="row-actions">
-        <button class="primary" data-q="review">Нужна проверка</button>
-        <button class="primary" data-q="unmatched" style="background:#374151">Несопоставленные</button>
+        <button class="primary" data-q="review">⚠ Требуют проверки <span id="review-count"></span></button>
+        <button class="ghost" data-q="unmatched">Несопоставленные со справочником</button>
       </div>
+      <p class="muted" id="review-hint">Подтвердите цену как есть, либо исправьте значение в поле и подтвердите.</p>
       <div id="review-result"></div>
+    </div>
+  </section>
+
+  <section id="upload" class="hidden">
+    <div class="panel">
+      <div id="drop" class="drop">
+        <div style="font-size:30px">📄</div>
+        <p><b>Перетащите прайс клиники</b> или нажмите для выбора<br>
+        <span class="muted">PDF · DOCX · XLSX · XLS (включая сканы)</span></p>
+        <input id="file" type="file" accept=".pdf,.docx,.xlsx,.xls" class="hidden" />
+      </div>
+      <div id="up-result" style="margin-top:16px"></div>
     </div>
   </section>
 
@@ -91,85 +122,171 @@
   </section>
 
 </main>
+
+<div id="modal-root"></div>
+<div id="toast" class="toast"></div>
+
 <script>
 const $ = s => document.querySelector(s);
 const fmtKzt = v => v==null ? '<span class="muted">—</span>' : Number(v).toLocaleString('ru-RU')+' ₸';
-const esc = s => (s??'').toString().replace(/[<>&]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+const esc = s => (s??'').toString().replace(/[<>&"]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+const fmtDate = d => d ? d.split('T')[0] : '—';
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200); }
 
 // tabs
 document.querySelectorAll('nav button').forEach(b => b.onclick = () => {
   document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
-  ['upload','search','review','dash'].forEach(t=>$('#'+t).classList.toggle('hidden', t!==b.dataset.tab));
+  ['search','partners','review','upload','dash'].forEach(t=>$('#'+t).classList.toggle('hidden', t!==b.dataset.tab));
   if (b.dataset.tab==='dash') loadDash();
+  if (b.dataset.tab==='partners') loadPartners();
 });
 
-// upload
+// ---------- SEARCH: a service across clinics, cheapest first ----------
+let st; $('#q').oninput = e => { clearTimeout(st); st=setTimeout(()=>runSearch(e.target.value),250); };
+async function runSearch(q){
+  if((q||'').length<2){ $('#search-result').innerHTML=''; return; }
+  const d = await (await fetch('/search?q='+encodeURIComponent(q))).json();
+  const items = d.price_items||[];
+  // mark the cheapest resident price per normalized service so the best offer stands out
+  const bestByName = {};
+  items.forEach(i=>{ const k=i.service_name_raw.toLowerCase(); const p=i.price_resident_kzt;
+    if(p!=null && (bestByName[k]==null || p<bestByName[k])) bestByName[k]=p; });
+  const rows = items.map(i=>{
+    const isBest = i.price_resident_kzt!=null && i.price_resident_kzt===bestByName[i.service_name_raw.toLowerCase()];
+    return `<tr>
+      <td>${esc(i.service_name_raw)} ${i.service_code_source?'<small class="code">'+esc(i.service_code_source)+'</small>':''}</td>
+      <td><a onclick="openPartner('${i.partner_id}')">${esc(i.partner_name||'—')}</a></td>
+      <td class="price ${isBest?'best':''}">${fmtKzt(i.price_resident_kzt)}${isBest?' ★':''}</td>
+      <td class="price">${fmtKzt(i.price_nonresident_kzt)}</td>
+      <td class="muted">${fmtDate(i.effective_date)}</td>
+      <td>${i.needs_review?'<span class="tag t-needs_review">проверка</span>':''}</td>
+    </tr>`;}).join('');
+  $('#search-result').innerHTML = `
+    <p class="muted">Найдено позиций: ${items.length}${items.length>=50?'+ (показаны первые 50)':''}. ★ — лучшая цена для резидента по услуге.</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Услуга</th><th>Клиника</th><th class="price">Резидент</th><th class="price">Нерезидент</th><th>Актуально</th><th></th></tr></thead>
+      <tbody>${rows||'<tr><td colspan=6 class="muted">ничего не найдено</td></tr>'}</tbody>
+    </table></div>`;
+}
+
+// ---------- PARTNERS ----------
+async function loadPartners(){
+  const ps = await (await fetch('/partners?limit=500')).json();
+  $('#partner-chips').innerHTML = ps.map(p=>`<span class="chip" onclick="openPartner('${p.partner_id}')">${esc(p.name)}</span>`).join('') || '<span class="muted">нет партнёров</span>';
+}
+
+async function openPartner(id){
+  const [p, svc] = await Promise.all([
+    (await fetch('/partners/'+id)).json(),
+    (await fetch('/partners/'+id+'/services?limit=5000')).json(),
+  ]);
+  const contacts = [p.city, p.address, p.contact_phone, p.contact_email].filter(Boolean).join(' · ') || 'контакты не указаны в прайсе';
+  const dates = [...new Set(svc.map(s=>fmtDate(s.effective_date)))].filter(x=>x!=='—');
+  // The preview aggregates rows that are exactly identical in name+price; merged_count>1
+  // means this displayed row stands for that many source rows (kept separate in storage).
+  const rawRows = svc.reduce((a,s)=>a+(s.merged_count||1),0);
+  const dupBadge = s => (s.merged_count>1)
+    ? ` <small class="code" style="background:#fff8c5;color:#9a6700;border-radius:4px;padding:0 5px" title="Объединено ${s.merged_count} одинаковых строк${s.merged_codes&&s.merged_codes.length?': '+esc(s.merged_codes.join(', ')):''}">×${s.merged_count}</small>`
+    : '';
+  const render = list => list.map(s=>`<tr>
+      <td class="muted">${esc(s.section||'')}</td>
+      <td>${esc(s.service_name_raw)} ${s.service_code_source?'<small class="code">'+esc(s.service_code_source)+'</small>':''}${dupBadge(s)}</td>
+      <td class="price">${fmtKzt(s.price_resident_kzt)}</td>
+      <td class="price">${fmtKzt(s.price_nonresident_kzt)}</td>
+    </tr>`).join('');
+  $('#modal-root').innerHTML = `<div class="overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2>${esc(p.name)}</h2>
+          <div class="muted">${esc(contacts)}</div>
+          <div class="muted" style="margin-top:4px">Позиций: ${svc.length}${rawRows>svc.length?` <span title="строк в прайсе до объединения одинаковых">(из ${rawRows} строк)</span>`:''} · Прайс актуален: ${dates.join(', ')||'—'}</div>
+        </div>
+        <button class="x" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <input id="pfilter" type="text" placeholder="Фильтр по услуге внутри прайса…" style="margin:4px 0 12px" />
+        <div class="scroll"><table>
+          <thead><tr><th>Раздел</th><th>Услуга</th><th class="price">Резидент</th><th class="price">Нерезидент</th></tr></thead>
+          <tbody id="ptbody">${render(svc.slice(0,400))}</tbody>
+        </table></div>
+        <p class="muted" id="pmore">${svc.length>400?'Показаны первые 400 — уточните фильтром.':''}</p>
+      </div>
+    </div></div>`;
+  $('#pfilter').oninput = e=>{
+    const f=e.target.value.toLowerCase();
+    const sub = f ? svc.filter(s=>(s.service_name_raw+' '+(s.service_code_source||'')).toLowerCase().includes(f)) : svc;
+    $('#ptbody').innerHTML = render(sub.slice(0,400));
+    $('#pmore').textContent = sub.length>400?`Совпадений ${sub.length}, показаны первые 400.`:`Совпадений: ${sub.length}`;
+  };
+}
+function closeModal(){ $('#modal-root').innerHTML=''; }
+
+// ---------- REVIEW / VERIFICATION (operator actions) ----------
+document.querySelectorAll('#review [data-q]').forEach(b=>b.onclick=()=>loadQueue(b.dataset.q));
+async function loadQueue(which){
+  $('#review-hint').textContent = which==='unmatched'
+    ? 'Позиции без привязки к справочнику услуг. Загрузите справочник, чтобы сопоставлять.'
+    : 'Подтвердите цену как есть, либо исправьте значение в поле и подтвердите.';
+  $('#review-result').innerHTML='<p class="muted">Загрузка…</p>';
+  const rows = await (await fetch('/'+which)).json();
+  const editable = which==='review';
+  $('#review-result').innerHTML = `<div class="scroll"><table>
+    <thead><tr><th>Клиника</th><th>Услуга</th><th class="price">Резидент</th><th class="price">Нерезидент</th><th>Причина</th>${editable?'<th></th>':''}</tr></thead>
+    <tbody>${rows.map(i=>`<tr id="r-${i.item_id}">
+        <td>${esc(i.partner_name||'')}</td>
+        <td>${esc(i.service_name_raw)} <small class="code">${esc(i.service_code_source||'')}</small></td>
+        <td class="price">${editable?`<input class="edit" type="number" step="1" value="${i.price_resident_kzt??''}" id="p-${i.item_id}">`:fmtKzt(i.price_resident_kzt)}</td>
+        <td class="price">${fmtKzt(i.price_nonresident_kzt)}</td>
+        <td class="muted">${esc(i.review_reason||(which==='unmatched'?'нет в справочнике':''))}</td>
+        ${editable?`<td><button class="ok" onclick="verifyItem('${i.item_id}')">✓ Подтвердить</button></td>`:''}
+      </tr>`).join('')||`<tr><td colspan=${editable?6:5} class="muted">очередь пуста 🎉</td></tr>`}</tbody>
+  </table></div>`;
+  if(which==='review') refreshReviewCount();
+}
+async function verifyItem(id){
+  const inp = $('#p-'+id);
+  const body = { is_verified:true, note:'проверено оператором' };
+  if(inp && inp.value!=='') body.price_resident_kzt = Number(inp.value);
+  const r = await fetch('/items/'+id+'/verify', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
+  if(r.ok){ const row=$('#r-'+id); if(row) row.remove(); toast('Позиция подтверждена'); refreshReviewCount(); }
+  else toast('Ошибка сохранения');
+}
+async function refreshReviewCount(){
+  const s = await (await fetch('/stats')).json();
+  $('#review-count').textContent = '('+s.needs_review+')';
+}
+
+// ---------- UPLOAD ----------
 const drop=$('#drop'), file=$('#file');
 drop.onclick=()=>file.click();
 drop.ondragover=e=>{e.preventDefault();drop.classList.add('hover');};
 drop.ondragleave=()=>drop.classList.remove('hover');
 drop.ondrop=e=>{e.preventDefault();drop.classList.remove('hover'); if(e.dataTransfer.files[0]) doUpload(e.dataTransfer.files[0]);};
 file.onchange=()=>file.files[0] && doUpload(file.files[0]);
-
 async function doUpload(f){
-  $('#up-result').innerHTML = `<p class="muted">⏳ Обработка <b>${esc(f.name)}</b>… (скан-PDF может занять время)</p>`;
+  $('#up-result').innerHTML = `<p class="muted">⏳ Обработка <b>${esc(f.name)}</b>…</p>`;
   const fd=new FormData(); fd.append('file', f);
   try{
     const r = await fetch('/upload', {method:'POST', body:fd});
     const d = await r.json();
-    if(!r.ok){ $('#up-result').innerHTML=`<p class="t-error tag">Ошибка</p> <span>${esc(d.detail||'')}</span>`; return; }
+    if(!r.ok){ $('#up-result').innerHTML=`<span class="tag t-error">Ошибка</span> <span>${esc(d.detail||'')}</span>`; return; }
     $('#up-result').innerHTML = `
       <table><tbody>
         <tr><td>Файл</td><td>${esc(d.file_name)} <small class="code">(${d.file_format})</small></td></tr>
         <tr><td>Партнёр</td><td>${esc(d.partner)}</td></tr>
-        <tr><td>Статус</td><td><span class="tag t-${d.skipped_duplicate?'dup':d.status}">${d.skipped_duplicate?'дубликат':d.status}</span></td></tr>
-        <tr><td>Строк извлечено</td><td>${d.rows_parsed}</td></tr>
+        <tr><td>Статус</td><td><span class="tag t-${d.skipped_duplicate?'dup':d.status}">${d.skipped_duplicate?'дубликат (пропущен)':d.status}</span></td></tr>
+        <tr><td>Извлечено строк</td><td>${d.rows_parsed}</td></tr>
         <tr><td>Записано позиций</td><td>${d.rows_written}</td></tr>
         <tr><td>На проверку</td><td>${d.rows_needs_review}</td></tr>
         <tr><td>Пропущено</td><td>${d.rows_dropped}</td></tr>
-        <tr><td>Авто-сопоставлено</td><td>${d.rows_matched}</td></tr>
       </tbody></table>
       ${d.warnings?.length ? '<p class="muted">⚠ '+d.warnings.map(esc).join('<br>⚠ ')+'</p>':''}`;
-  }catch(e){ $('#up-result').innerHTML=`<p class="t-error tag">Сбой запроса</p> ${esc(e.message)}`; }
+  }catch(e){ $('#up-result').innerHTML=`<span class="tag t-error">Сбой</span> ${esc(e.message)}`; }
 }
 
-// search
-let st; $('#q').oninput = e => { clearTimeout(st); st=setTimeout(()=>runSearch(e.target.value),250); };
-async function runSearch(q){
-  if((q||'').length<2){ $('#search-result').innerHTML=''; return; }
-  const d = await (await fetch('/search?q='+encodeURIComponent(q))).json();
-  const items = (d.price_items||[]).map(i=>`<tr>
-      <td>${esc(i.service_name_raw)} ${i.service_code_source?'<small class="code">'+esc(i.service_code_source)+'</small>':''}</td>
-      <td class="price">${fmtKzt(i.price_resident_kzt)}</td>
-      <td class="price">${fmtKzt(i.price_nonresident_kzt)}</td>
-      <td>${i.needs_review?'<span class="tag t-needs_review">проверка</span>':''}</td>
-    </tr>`).join('');
-  $('#search-result').innerHTML = `
-    <p class="muted">Клиники: ${(d.partners||[]).map(p=>esc(p.name)).join(', ')||'—'}</p>
-    <div class="scroll"><table>
-      <thead><tr><th>Услуга (как в прайсе)</th><th>Резидент</th><th>Нерезидент</th><th></th></tr></thead>
-      <tbody>${items||'<tr><td colspan=4 class="muted">ничего не найдено</td></tr>'}</tbody>
-    </table></div>`;
-}
-
-// review queue
-document.querySelectorAll('#review [data-q]').forEach(b=>b.onclick=()=>loadQueue(b.dataset.q));
-async function loadQueue(which){
-  $('#review-result').innerHTML='<p class="muted">Загрузка…</p>';
-  const rows = await (await fetch('/'+which)).json();
-  $('#review-result').innerHTML = `<div class="scroll"><table>
-    <thead><tr><th>Услуга</th><th>Резидент</th><th>Нерезидент</th><th>Причина</th></tr></thead>
-    <tbody>${rows.map(i=>`<tr>
-        <td>${esc(i.service_name_raw)} <small class="code">${esc(i.service_code_source||'')}</small></td>
-        <td class="price">${fmtKzt(i.price_resident_kzt)}</td>
-        <td class="price">${fmtKzt(i.price_nonresident_kzt)}</td>
-        <td class="muted">${esc(i.review_reason||(which==='unmatched'?'нет в справочнике':''))}</td>
-      </tr>`).join('')||'<tr><td colspan=4 class="muted">очередь пуста</td></tr>'}</tbody>
-  </table></div>`;
-}
-
-// dashboard
+// ---------- DASHBOARD ----------
 async function loadDash(){
   const d = await (await fetch('/stats')).json();
   const cell=(n,l)=>`<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`;
@@ -178,13 +295,16 @@ async function loadDash(){
     <div class="stat-grid">
       ${cell(d.documents,'документов')}
       ${cell(d.partners,'партнёров')}
-      ${cell(d.price_items,'позиций цен')}
+      ${cell(d.price_items.toLocaleString('ru-RU'),'позиций цен')}
       ${cell(d.services,'услуг в справочнике')}
       ${cell(d.match_rate_pct+'%','авто-нормализация')}
       ${cell(d.needs_review,'на проверке')}
     </div>
     <p class="muted" style="margin-top:14px">Документы по статусам: ${byStatus||'—'}</p>`;
 }
+
+// initial review count badge
+refreshReviewCount();
 </script>
 </body>
 </html>

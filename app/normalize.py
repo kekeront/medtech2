@@ -28,6 +28,22 @@ def _key(s: str) -> str:
     return expand_abbreviations(normalize_ru(s))
 
 
+# A period that abuts a word (not a digit) — "27.Массаж", "31.7.Определение".
+# The (?=\D) guard leaves numbering dots ("31.7") untouched.
+_SECTION_DOT_RE = re.compile(r"\.(?=\S)(?=\D)")
+
+
+def clean_section(s: str | None) -> str | None:
+    """Canonicalize a parsed section header so differently-spaced copies of the same
+    section don't fork into duplicates ('Раздел 27.Массаж' vs 'Раздел 27. Массаж').
+    Inserts a single space after a word-abutting period and collapses whitespace."""
+    if not s:
+        return s
+    s = _SECTION_DOT_RE.sub(". ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s or None
+
+
 @dataclass
 class MatchResult:
     service_id: uuid.UUID | None
@@ -43,10 +59,12 @@ class ServiceMatcher:
         self.exact: dict[str, uuid.UUID] = {}
         self.choices: dict[str, uuid.UUID] = {}  # normalized name/synonym -> service_id
         for svc in session.scalars(select(Service).where(Service.is_active.is_(True))):
-            self.exact[_key(svc.service_name)] = svc.service_id
-            self.choices[_key(svc.service_name)] = svc.service_id
+            # setdefault: on a key collision keep the first (oldest) service rather than
+            # silently overwriting its service_id with a later duplicate.
+            self.exact.setdefault(_key(svc.service_name), svc.service_id)
+            self.choices.setdefault(_key(svc.service_name), svc.service_id)
             for syn in svc.synonyms or []:
-                self.choices[_key(syn)] = svc.service_id
+                self.choices.setdefault(_key(syn), svc.service_id)
 
     @property
     def empty(self) -> bool:

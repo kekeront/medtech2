@@ -109,6 +109,10 @@ def _classify_columns(grid, header_idx, ncols):
             return 0.0
         return sum(_is_number_cell(v) for v in vals) / len(vals)
 
+    # Reject any keyword-named "price" column whose data is not actually numeric.
+    # Stacked/merged headers can park a "Цена" label above the code column (the real
+    # price header sits one row lower and never reaches this row), so trust the data.
+    price_cols = [c for c in price_cols if density(c) >= 0.5]
     if not price_cols:
         price_cols = [c for c in range(ncols) if c not in skip and density(c) >= 0.5]
 

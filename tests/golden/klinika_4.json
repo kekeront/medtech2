@@ -1,0 +1,6126 @@
+{
+  "source_file": "Клиника 4 прайс 2026.pdf",
+  "partner": "Клиника 4",
+  "extracted_by": "claude-vision",
+  "sampled": false,
+  "rows": [
+    {
+      "name": "Консультация врача (дмн, профессора) (первичная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 19800,
+      "price_nonresident_kzt": 24900,
+      "price_extra_tiers": {
+        "СНГ": 22200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Консультация врача (дмн, профессора) (повторная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 9900,
+      "price_nonresident_kzt": 12500,
+      "price_extra_tiers": {
+        "СНГ": 11100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Консультация врача (кмн) (первичная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Консультация врача (кмн) (повторная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 8300,
+      "price_nonresident_kzt": 10500,
+      "price_extra_tiers": {
+        "СНГ": 9300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Консультация врача (первичная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 13200,
+      "price_nonresident_kzt": 16600,
+      "price_extra_tiers": {
+        "СНГ": 14800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Консультация врача (повторная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Онлайн консультация врача (первичная)",
+      "code": null,
+      "unit": "видеозвонок",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 19800,
+      "price_nonresident_kzt": 24900,
+      "price_extra_tiers": {
+        "СНГ": 22200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Онлайн консультация врача (повторная (в течении 2-х недель после первичной консультации))",
+      "code": null,
+      "unit": "видеозвонок",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 9900,
+      "price_nonresident_kzt": 12500,
+      "price_extra_tiers": {
+        "СНГ": 11100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 1
+    },
+    {
+      "name": "Выездная консультация врача (до 15 пациентов в день)",
+      "code": null,
+      "unit": "пакет",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 148500,
+      "price_nonresident_kzt": 186400,
+      "price_extra_tiers": {
+        "СНГ": 166400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Выездная консультация врача",
+      "code": null,
+      "unit": "час",
+      "section": "подраздел 1.1. Консультации врачей",
+      "price_resident_kzt": 18700,
+      "price_nonresident_kzt": 23600,
+      "price_extra_tiers": {
+        "СНГ": 21000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Снятие металлоконструкций",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 77000,
+      "price_nonresident_kzt": 96700,
+      "price_extra_tiers": {
+        "СНГ": 86300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Доброкачественные образования кожи и подкожной клетчатки",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 44000,
+      "price_nonresident_kzt": 55300,
+      "price_extra_tiers": {
+        "СНГ": 49300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Лечебная блокада суставов и конечностей",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 11600,
+      "price_nonresident_kzt": 14600,
+      "price_extra_tiers": {
+        "СНГ": 13000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Лечебная блокада в область позвоночника",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 14300,
+      "price_nonresident_kzt": 18100,
+      "price_extra_tiers": {
+        "СНГ": 16100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Краевая резекция ногтевой пластинки при вросшем ногте",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 14300,
+      "price_nonresident_kzt": 18100,
+      "price_extra_tiers": {
+        "СНГ": 16100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Удаление ногтевой пластины (вследствие травмы, вросшего ногтя, деформации ногтя, грибкового поражения)",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 17600,
+      "price_nonresident_kzt": 22200,
+      "price_extra_tiers": {
+        "СНГ": 19800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Краевая резекция ногтевой пластинки при вросшем ногте с пластикой местными тканями",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 33000,
+      "price_nonresident_kzt": 41500,
+      "price_extra_tiers": {
+        "СНГ": 37000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Удаление инородного тела",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Вскрытие гидраденита, гематомы, фурункула, карбункула, абсцесса, нагноившейся атеромы и т.д.",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Первичная хирургическая обработка раны",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 13200,
+      "price_nonresident_kzt": 16600,
+      "price_extra_tiers": {
+        "СНГ": 14800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Пункция суставов (1 сустав)",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 7700,
+      "price_nonresident_kzt": 9800,
+      "price_extra_tiers": {
+        "СНГ": 8700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 2
+    },
+    {
+      "name": "Демонтаж аппарата Илизарова",
+      "code": null,
+      "unit": "операция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 18700,
+      "price_nonresident_kzt": 23600,
+      "price_extra_tiers": {
+        "СНГ": 21000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Гипсовая повязка с фиксацией 2-х суставов и более (задняя лангетка)",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 9400,
+      "price_nonresident_kzt": 11900,
+      "price_extra_tiers": {
+        "СНГ": 10600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Перевязка большая",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 7700,
+      "price_nonresident_kzt": 9800,
+      "price_extra_tiers": {
+        "СНГ": 8700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Перевязка средняя",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Перевязка малая",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Снятие гипсовых повязок",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 3100,
+      "price_nonresident_kzt": 4000,
+      "price_extra_tiers": {
+        "СНГ": 3500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Снятие швов",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 5500,
+      "price_nonresident_kzt": 7000,
+      "price_extra_tiers": {
+        "СНГ": 6200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Наложение скотчкаста",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 19800,
+      "price_nonresident_kzt": 24900,
+      "price_extra_tiers": {
+        "СНГ": 22200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Снятие скточкаста",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 13200,
+      "price_nonresident_kzt": 16600,
+      "price_extra_tiers": {
+        "СНГ": 14800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Блокада проводниковая и новокаиновая",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 4400,
+      "price_nonresident_kzt": 5600,
+      "price_extra_tiers": {
+        "СНГ": 5000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Операция под местной анестезией",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 7400,
+      "price_nonresident_kzt": 9300,
+      "price_extra_tiers": {
+        "СНГ": 8300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "8-ми образная гипсовая повязка",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Ампутация пальца",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Наложение повязки Дезо",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 9600,
+      "price_nonresident_kzt": 12100,
+      "price_extra_tiers": {
+        "СНГ": 10800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Мягкое Дезо",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 3300,
+      "price_nonresident_kzt": 4200,
+      "price_extra_tiers": {
+        "СНГ": 3700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Абсорбированный дифтирийно-столбнячный анатоксин",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 7600,
+      "price_nonresident_kzt": 9700,
+      "price_extra_tiers": {
+        "СНГ": 8600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Вытяжения за ногтевую фалангу (по Черкез-Заде)",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 10800,
+      "price_nonresident_kzt": 13600,
+      "price_extra_tiers": {
+        "СНГ": 12100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Удаление дренажа",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Проба на антибиотик",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 900,
+      "price_nonresident_kzt": 1300,
+      "price_extra_tiers": {
+        "СНГ": 1100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Репозиция перелома",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 9900,
+      "price_nonresident_kzt": 12500,
+      "price_extra_tiers": {
+        "СНГ": 11100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Закрытое вправление вывиха, неуточненная локализация",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 11000,
+      "price_nonresident_kzt": 13900,
+      "price_extra_tiers": {
+        "СНГ": 12400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 3
+    },
+    {
+      "name": "Удаление спицы с пальцев стопы и кистей, пястных и плюсневых костей",
+      "code": null,
+      "unit": "процедура",
+      "section": "подраздел 1.2. Дополнительные услуги консультативно-диагностического отделения, а также в травматологическом пункте",
+      "price_resident_kzt": 13800,
+      "price_nonresident_kzt": 17400,
+      "price_extra_tiers": {
+        "СНГ": 15500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Check-up «Предоперационная экспресс подготовка»",
+      "code": null,
+      "unit": "пакет",
+      "section": "Раздел 2. Check-up программы",
+      "price_resident_kzt": 56800,
+      "price_nonresident_kzt": 71400,
+      "price_extra_tiers": {
+        "СНГ": 63700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Check-up «Здоровые суставы»",
+      "code": null,
+      "unit": "пакет",
+      "section": "Раздел 2. Check-up программы",
+      "price_resident_kzt": 36900,
+      "price_nonresident_kzt": 46400,
+      "price_extra_tiers": {
+        "СНГ": 41400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Check-up «Здоровый позвоночник»",
+      "code": null,
+      "unit": "пакет",
+      "section": "Раздел 2. Check-up программы",
+      "price_resident_kzt": 99500,
+      "price_nonresident_kzt": 124900,
+      "price_extra_tiers": {
+        "СНГ": 111500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Консультация реабилитолога (кмн) (с составлением индивидуальной реабилитационной программы)",
+      "code": null,
+      "unit": "консультация",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Консультация реабилитолога (кмн) (повторная)",
+      "code": null,
+      "unit": "консультация",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 8300,
+      "price_nonresident_kzt": 10500,
+      "price_extra_tiers": {
+        "СНГ": 9300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Консультация реабилитолога (с составлением индивидуальной реабилитационной программы)",
+      "code": null,
+      "unit": "консультация",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 13200,
+      "price_nonresident_kzt": 16600,
+      "price_extra_tiers": {
+        "СНГ": 14800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Консультация реабилитолога (повторная)",
+      "code": null,
+      "unit": "консультация",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Механотерапия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3100,
+      "price_nonresident_kzt": 4000,
+      "price_extra_tiers": {
+        "СНГ": 3500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Механотерапия (реабилитационное комплекс-кресло)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3100,
+      "price_nonresident_kzt": 4000,
+      "price_extra_tiers": {
+        "СНГ": 3500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Подводный душ массаж верхних конечностей",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2600,
+      "price_nonresident_kzt": 3400,
+      "price_extra_tiers": {
+        "СНГ": 3000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Кинезиотерапия групповая",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3300,
+      "price_nonresident_kzt": 4200,
+      "price_extra_tiers": {
+        "СНГ": 3700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Кинезиотерапия индивидуальная (инструктор ЛФК)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 5500,
+      "price_nonresident_kzt": 7000,
+      "price_extra_tiers": {
+        "СНГ": 6200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Кинезиотерапия индивидуальная (реабилитолог)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 11000,
+      "price_nonresident_kzt": 13900,
+      "price_extra_tiers": {
+        "СНГ": 12400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Кинезиотейпирование",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 4400,
+      "price_nonresident_kzt": 5600,
+      "price_extra_tiers": {
+        "СНГ": 5000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Внутрисуставное введение лекарственных средств (без учета медикаментов)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 6200,
+      "price_nonresident_kzt": 7900,
+      "price_extra_tiers": {
+        "СНГ": 7000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 5
+    },
+    {
+      "name": "Тренажерный зал",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж воротниковой зоны",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3700,
+      "price_nonresident_kzt": 4800,
+      "price_extra_tiers": {
+        "СНГ": 4200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж верхней конечности",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж грудной клетки",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 4300,
+      "price_nonresident_kzt": 5500,
+      "price_extra_tiers": {
+        "СНГ": 4900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж спины и позвоночника",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 4300,
+      "price_nonresident_kzt": 5500,
+      "price_extra_tiers": {
+        "СНГ": 4900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж пояснично-крестцового отдела",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3700,
+      "price_nonresident_kzt": 4800,
+      "price_extra_tiers": {
+        "СНГ": 4200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж нижней конечности",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж тазобедренного сустава",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Массаж голени и стопы",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Светолечение (КУФО)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 1600,
+      "price_nonresident_kzt": 2100,
+      "price_extra_tiers": {
+        "СНГ": 1800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Светолечение (УФО)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2200,
+      "price_nonresident_kzt": 2800,
+      "price_extra_tiers": {
+        "СНГ": 2500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Электрофорез аспирин ДМСО",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2700,
+      "price_nonresident_kzt": 3500,
+      "price_extra_tiers": {
+        "СНГ": 3100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Ультрафонофорез",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3700,
+      "price_nonresident_kzt": 4800,
+      "price_extra_tiers": {
+        "СНГ": 4200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Озокеритолечение",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3900,
+      "price_nonresident_kzt": 5000,
+      "price_extra_tiers": {
+        "СНГ": 4400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Гальванизация",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 1800,
+      "price_nonresident_kzt": 2400,
+      "price_extra_tiers": {
+        "СНГ": 2100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Ультразвуковая терапия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2700,
+      "price_nonresident_kzt": 3500,
+      "price_extra_tiers": {
+        "СНГ": 3100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Парафинолечение",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Ингаляционная терапия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 1700,
+      "price_nonresident_kzt": 2300,
+      "price_extra_tiers": {
+        "СНГ": 2000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Электроанальгезия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Электростимуляция",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 3300,
+      "price_nonresident_kzt": 4200,
+      "price_extra_tiers": {
+        "СНГ": 3700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Микроволновая терапия (СВМ)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Магнитотерапия от аппарата БТЛ",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 6
+    },
+    {
+      "name": "Магнитотерапия (Алмаг)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2400,
+      "price_nonresident_kzt": 3100,
+      "price_extra_tiers": {
+        "СНГ": 2700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Низкоинтексивная лазеротерапия (НИЛ) от аппарата (УЗОР - 2К)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Криотерапия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Компьютерная механотерапия (тестирование)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 11600,
+      "price_nonresident_kzt": 14600,
+      "price_extra_tiers": {
+        "СНГ": 13000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Компьютерная механотерапия (терапевтическая процедура 1 единицы)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Компьютерная механотерапия (плечевого сустава)",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 7000,
+      "price_nonresident_kzt": 8900,
+      "price_extra_tiers": {
+        "СНГ": 7900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Ударно-волновая терапия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 13300,
+      "price_extra_tiers": {
+        "СНГ": 11800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Стационар круглосуточного пребывания по ШРМ 3,4 (с питанием, без медикаментов)",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 23100,
+      "price_nonresident_kzt": 29100,
+      "price_extra_tiers": {
+        "СНГ": 25900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Стационар круглосуточного пребывания по ШРМ 2 (с питанием, без медикаментов)",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 19800,
+      "price_nonresident_kzt": 24900,
+      "price_extra_tiers": {
+        "СНГ": 22200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Пребывание лиц, находящихся совместно с пациентом по уходу (с питанием)",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 11000,
+      "price_nonresident_kzt": 13900,
+      "price_extra_tiers": {
+        "СНГ": 12400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Прессотерапия",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 3. Отделение реабилитации",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "ЭКГ в 12-ти отведениях",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.1. Кабинет функциональной диагностики",
+      "price_resident_kzt": 5300,
+      "price_nonresident_kzt": 6800,
+      "price_extra_tiers": {
+        "СНГ": 6000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "ЭКГ по Нэбу",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.1. Кабинет функциональной диагностики",
+      "price_resident_kzt": 5700,
+      "price_nonresident_kzt": 7200,
+      "price_extra_tiers": {
+        "СНГ": 6400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Диагностическая эзофатогастродуоденоскопия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 13200,
+      "price_nonresident_kzt": 16600,
+      "price_extra_tiers": {
+        "СНГ": 14800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Диагностическая колоноскопия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 18700,
+      "price_nonresident_kzt": 23600,
+      "price_extra_tiers": {
+        "СНГ": 21000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 7
+    },
+    {
+      "name": "Диагностическая ректороманоскопия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 11400,
+      "price_nonresident_kzt": 14400,
+      "price_extra_tiers": {
+        "СНГ": 12800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Диагностическая фибробронхоскопия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 20300,
+      "price_nonresident_kzt": 25600,
+      "price_extra_tiers": {
+        "СНГ": 22800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Исследование фрагментов слизистой на гистоанализ",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Исследование фрагментов слизистой на цитологию Helicobacter pylori",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 4000,
+      "price_nonresident_kzt": 5100,
+      "price_extra_tiers": {
+        "СНГ": 4500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Исследование одного фрагмента слизистой на экспресс Хелпил тест для определения Helicobacter pylori",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 4000,
+      "price_nonresident_kzt": 5100,
+      "price_extra_tiers": {
+        "СНГ": 4500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Исследование мокроты на общий анализ и бакпосев",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Эндоскопическая щипковая биопсия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.2. Кабинет эндовидеохирургии",
+      "price_resident_kzt": 8800,
+      "price_nonresident_kzt": 11100,
+      "price_extra_tiers": {
+        "СНГ": 9900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "ЭНМГ (электронейромиография) верхних конечностей",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.3. Лаборатория биомеханики и электромиографии",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "ЭНМГ (электронейромиография) нижних конечностей",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.3. Лаборатория биомеханики и электромиографии",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "ЭНМГ (электронейромиография) лицевого нерва и декремент-тест",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.3. Лаборатория биомеханики и электромиографии",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "ЭМГ (электромиография) игольчатая",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.3. Лаборатория биомеханики и электромиографии",
+      "price_resident_kzt": 25300,
+      "price_nonresident_kzt": 31900,
+      "price_extra_tiers": {
+        "СНГ": 28400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "ЭЭГ (электроэнцефалография)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 4.3. Лаборатория биомеханики и электромиографии",
+      "price_resident_kzt": 10800,
+      "price_nonresident_kzt": 13600,
+      "price_extra_tiers": {
+        "СНГ": 12100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Компьютерная томография с 3Д реконструкцией (без применения контрастного вещества)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.1. Кабинет компьютерной томографии",
+      "price_resident_kzt": 13700,
+      "price_nonresident_kzt": 17300,
+      "price_extra_tiers": {
+        "СНГ": 15400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Компьютерная томография с болюсным контрастным веществом (сухая проявка)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.1. Кабинет компьютерной томографии",
+      "price_resident_kzt": 39200,
+      "price_nonresident_kzt": 49300,
+      "price_extra_tiers": {
+        "СНГ": 44000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Телерентгенограмма",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.1. Кабинет компьютерной томографии",
+      "price_resident_kzt": 15400,
+      "price_nonresident_kzt": 19400,
+      "price_extra_tiers": {
+        "СНГ": 17300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 8
+    },
+    {
+      "name": "Магнитно-резонансная томография (без применения контрастного вещества)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.2. Кабинет магнитно-резонансного томографа",
+      "price_resident_kzt": 24800,
+      "price_nonresident_kzt": 31200,
+      "price_extra_tiers": {
+        "СНГ": 27800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Магнитно-резонансная томография (с применением контрастного вещества)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.2. Кабинет магнитно-резонансного томографа",
+      "price_resident_kzt": 41900,
+      "price_nonresident_kzt": 52700,
+      "price_extra_tiers": {
+        "СНГ": 47000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография височных костей по Майеру, Стенверсу, Щюллеру",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6800,
+      "price_nonresident_kzt": 8700,
+      "price_extra_tiers": {
+        "СНГ": 7700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография органов грудной клетки 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 4500,
+      "price_nonresident_kzt": 5800,
+      "price_extra_tiers": {
+        "СНГ": 5100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография органов грудной клетки 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография органов грудной клетки в боковой проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 4400,
+      "price_nonresident_kzt": 5600,
+      "price_extra_tiers": {
+        "СНГ": 5000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография кости и сустава 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 3900,
+      "price_nonresident_kzt": 5000,
+      "price_extra_tiers": {
+        "СНГ": 4400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография кости и сустава 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5400,
+      "price_nonresident_kzt": 6900,
+      "price_extra_tiers": {
+        "СНГ": 6100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография кости и сустава 1 проекция с нагрузкой",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 4300,
+      "price_nonresident_kzt": 5500,
+      "price_extra_tiers": {
+        "СНГ": 4900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография кости и сустава 2 проекции с нагрузкой",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6400,
+      "price_nonresident_kzt": 8100,
+      "price_extra_tiers": {
+        "СНГ": 7200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография костей таза с тазобедренными суставами",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6500,
+      "price_nonresident_kzt": 8200,
+      "price_extra_tiers": {
+        "СНГ": 7300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография позвоночника 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 3900,
+      "price_nonresident_kzt": 5000,
+      "price_extra_tiers": {
+        "СНГ": 4400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография позвоночника 2 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5400,
+      "price_nonresident_kzt": 6900,
+      "price_extra_tiers": {
+        "СНГ": 6100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография позвоночника 2 проекции с нагрузкой",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6000,
+      "price_nonresident_kzt": 7700,
+      "price_extra_tiers": {
+        "СНГ": 6800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография ребра 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 4300,
+      "price_nonresident_kzt": 5500,
+      "price_extra_tiers": {
+        "СНГ": 4900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография ребра 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5400,
+      "price_nonresident_kzt": 6900,
+      "price_extra_tiers": {
+        "СНГ": 6100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 9
+    },
+    {
+      "name": "Рентгенография пазух носа 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 3800,
+      "price_nonresident_kzt": 4900,
+      "price_extra_tiers": {
+        "СНГ": 4300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография пазух носа 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография костей носа 1 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 4300,
+      "price_nonresident_kzt": 5500,
+      "price_extra_tiers": {
+        "СНГ": 4900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография костей носа 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография черепа в 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6200,
+      "price_nonresident_kzt": 7900,
+      "price_extra_tiers": {
+        "СНГ": 7000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография нижней челюсти 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 4700,
+      "price_nonresident_kzt": 6000,
+      "price_extra_tiers": {
+        "СНГ": 5300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография турецкого седла",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 3200,
+      "price_nonresident_kzt": 4100,
+      "price_extra_tiers": {
+        "СНГ": 3600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография панорамная",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5300,
+      "price_nonresident_kzt": 6800,
+      "price_extra_tiers": {
+        "СНГ": 6000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография пищевода",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 10200,
+      "price_nonresident_kzt": 12900,
+      "price_extra_tiers": {
+        "СНГ": 11500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография брюшной полости",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5200,
+      "price_nonresident_kzt": 6700,
+      "price_extra_tiers": {
+        "СНГ": 5900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография желудка",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 13300,
+      "price_extra_tiers": {
+        "СНГ": 11800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография тонкого кишечника",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 13300,
+      "price_extra_tiers": {
+        "СНГ": 11800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Ирригоскопия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 14200,
+      "price_nonresident_kzt": 18000,
+      "price_extra_tiers": {
+        "СНГ": 16000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Урография внутривенная",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 25300,
+      "price_nonresident_kzt": 31900,
+      "price_extra_tiers": {
+        "СНГ": 28400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Миелография",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 24300,
+      "price_nonresident_kzt": 30600,
+      "price_extra_tiers": {
+        "СНГ": 27300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Веноспондилография с миелографией",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 33100,
+      "price_nonresident_kzt": 41600,
+      "price_extra_tiers": {
+        "СНГ": 37100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Зонография почек",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 9800,
+      "price_nonresident_kzt": 12400,
+      "price_extra_tiers": {
+        "СНГ": 11000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Цистография",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 9200,
+      "price_nonresident_kzt": 11700,
+      "price_extra_tiers": {
+        "СНГ": 10400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Фистулография",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 11400,
+      "price_extra_tiers": {
+        "СНГ": 10100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Томография легких",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.3. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7500,
+      "price_nonresident_kzt": 9500,
+      "price_extra_tiers": {
+        "СНГ": 8400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 10
+    },
+    {
+      "name": "Рентгенография височных костей по Майеру, Стенверсу, Щюллеру",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 11400,
+      "price_extra_tiers": {
+        "СНГ": 10100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография органов грудной клетки 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6700,
+      "price_nonresident_kzt": 8600,
+      "price_extra_tiers": {
+        "СНГ": 7600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография органов грудной клетки 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 9400,
+      "price_nonresident_kzt": 11900,
+      "price_extra_tiers": {
+        "СНГ": 10600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография органов грудной клетки в боковой проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6700,
+      "price_nonresident_kzt": 8600,
+      "price_extra_tiers": {
+        "СНГ": 7600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография кости и сустава 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6100,
+      "price_nonresident_kzt": 7800,
+      "price_extra_tiers": {
+        "СНГ": 6900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография кости и сустава 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7600,
+      "price_nonresident_kzt": 9700,
+      "price_extra_tiers": {
+        "СНГ": 8600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография кости и сустава 1 проекция с нагрузкой",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6500,
+      "price_nonresident_kzt": 8200,
+      "price_extra_tiers": {
+        "СНГ": 7300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография кости и сустава 2 проекции с нагрузкой",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 8600,
+      "price_nonresident_kzt": 10900,
+      "price_extra_tiers": {
+        "СНГ": 9700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография костей таза с тазобедренными суставами",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 8700,
+      "price_nonresident_kzt": 11000,
+      "price_extra_tiers": {
+        "СНГ": 9800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография позвоночника 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6100,
+      "price_nonresident_kzt": 7800,
+      "price_extra_tiers": {
+        "СНГ": 6900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография позвоночника 2 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7600,
+      "price_nonresident_kzt": 9700,
+      "price_extra_tiers": {
+        "СНГ": 8600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография позвоночника 2 проекции с нагрузкой",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 8200,
+      "price_nonresident_kzt": 10400,
+      "price_extra_tiers": {
+        "СНГ": 9200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография ребра 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6500,
+      "price_nonresident_kzt": 8200,
+      "price_extra_tiers": {
+        "СНГ": 7300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография ребра 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7600,
+      "price_nonresident_kzt": 9700,
+      "price_extra_tiers": {
+        "СНГ": 8600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография пазух носа 1 проекция",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6000,
+      "price_nonresident_kzt": 7700,
+      "price_extra_tiers": {
+        "СНГ": 6800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография пазух носа 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография костей носа 1 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6500,
+      "price_nonresident_kzt": 8200,
+      "price_extra_tiers": {
+        "СНГ": 7300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 11
+    },
+    {
+      "name": "Рентгенография костей носа 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография черепа в 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография нижней челюсти 2 проекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6900,
+      "price_nonresident_kzt": 8800,
+      "price_extra_tiers": {
+        "СНГ": 7800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография турецкого седла",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 5400,
+      "price_nonresident_kzt": 6900,
+      "price_extra_tiers": {
+        "СНГ": 6100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография панорамная",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 6100,
+      "price_nonresident_kzt": 7800,
+      "price_extra_tiers": {
+        "СНГ": 6900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография пищевода",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 12400,
+      "price_nonresident_kzt": 15600,
+      "price_extra_tiers": {
+        "СНГ": 13900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография брюшной полости",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 7400,
+      "price_nonresident_kzt": 9300,
+      "price_extra_tiers": {
+        "СНГ": 8300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография желудка",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 12700,
+      "price_nonresident_kzt": 16100,
+      "price_extra_tiers": {
+        "СНГ": 14300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгенография тонкого кишечника",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 12700,
+      "price_nonresident_kzt": 16100,
+      "price_extra_tiers": {
+        "СНГ": 14300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Ирригоскопия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 16400,
+      "price_nonresident_kzt": 20700,
+      "price_extra_tiers": {
+        "СНГ": 18400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Урография внутривенная",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 27600,
+      "price_nonresident_kzt": 34800,
+      "price_extra_tiers": {
+        "СНГ": 31000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Миелография",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 26500,
+      "price_nonresident_kzt": 33300,
+      "price_extra_tiers": {
+        "СНГ": 29700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Веноспондилография с миелографией",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 35300,
+      "price_nonresident_kzt": 44400,
+      "price_extra_tiers": {
+        "СНГ": 39600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Зонография почек",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 11300,
+      "price_nonresident_kzt": 14300,
+      "price_extra_tiers": {
+        "СНГ": 12700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Цистография",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 11400,
+      "price_nonresident_kzt": 14400,
+      "price_extra_tiers": {
+        "СНГ": 12800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Фистулография",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 11200,
+      "price_nonresident_kzt": 14200,
+      "price_extra_tiers": {
+        "СНГ": 12600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Томография легких",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.4. Кабинет рентгеновских исследований",
+      "price_resident_kzt": 9700,
+      "price_nonresident_kzt": 12300,
+      "price_extra_tiers": {
+        "СНГ": 10900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгеновская денситометрия поясничного отдела позвоночника",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.5. Кабинет денситометрических исследований",
+      "price_resident_kzt": 8100,
+      "price_nonresident_kzt": 10200,
+      "price_extra_tiers": {
+        "СНГ": 9100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 12
+    },
+    {
+      "name": "Рентгеновская денситометрия одного тазобедренного сустава",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.5. Кабинет денситометрических исследований",
+      "price_resident_kzt": 8100,
+      "price_nonresident_kzt": 10200,
+      "price_extra_tiers": {
+        "СНГ": 9100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ женское здоровье",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 30100,
+      "price_nonresident_kzt": 37900,
+      "price_extra_tiers": {
+        "СНГ": 33800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ мужское здоровье",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 27000,
+      "price_nonresident_kzt": 34000,
+      "price_extra_tiers": {
+        "СНГ": 30300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ почек",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ надпочечников",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ молочной железы",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ щитовидной железы",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 7600,
+      "price_nonresident_kzt": 9700,
+      "price_extra_tiers": {
+        "СНГ": 8600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ предстательной железы (трансабдоминально)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5800,
+      "price_nonresident_kzt": 7300,
+      "price_extra_tiers": {
+        "СНГ": 6500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "ТРУЗИ предстательной железы (трансректально)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8000,
+      "price_nonresident_kzt": 10100,
+      "price_extra_tiers": {
+        "СНГ": 9000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ мочевого пузыря",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5800,
+      "price_nonresident_kzt": 7300,
+      "price_extra_tiers": {
+        "СНГ": 6500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ печени, желчного пузыря, поджелудочной железы, селезенки",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ печени, желчного пузыря, поджелудочной железы, селезенки, почки",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 13400,
+      "price_nonresident_kzt": 17000,
+      "price_extra_tiers": {
+        "СНГ": 15100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ при беременности",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 7000,
+      "price_nonresident_kzt": 8900,
+      "price_extra_tiers": {
+        "СНГ": 7900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "УЗИ при гинекологических заболеваниях",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 13
+    },
+    {
+      "name": "Трансвагинальное исследование матки",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ мягких тканей",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ нервов",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 13300,
+      "price_nonresident_kzt": 16700,
+      "price_extra_tiers": {
+        "СНГ": 14900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ сосудов брюшной полости (печень, поджелудочная железа, селезенка)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ сустава",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 12000,
+      "price_nonresident_kzt": 15200,
+      "price_extra_tiers": {
+        "СНГ": 13500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ плевральных полостей",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5500,
+      "price_nonresident_kzt": 7000,
+      "price_extra_tiers": {
+        "СНГ": 6200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "Допплерография сосудов нижних конечностей",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 9600,
+      "price_nonresident_kzt": 12100,
+      "price_extra_tiers": {
+        "СНГ": 10800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "Исследование пяточной кости одной ноги",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 4700,
+      "price_nonresident_kzt": 6000,
+      "price_extra_tiers": {
+        "СНГ": 5300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "Исследование пяточной кости обеих ног",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5700,
+      "price_nonresident_kzt": 7200,
+      "price_extra_tiers": {
+        "СНГ": 6400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ органов мошонки",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 7600,
+      "price_nonresident_kzt": 9700,
+      "price_extra_tiers": {
+        "СНГ": 8600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ лимфотических узлов (по отдельным группам)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5800,
+      "price_nonresident_kzt": 7300,
+      "price_extra_tiers": {
+        "СНГ": 6500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "Допплерография сосудов верхних конечностей артерий",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "Допплерография сосудов верхних конечностей вены",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8400,
+      "price_nonresident_kzt": 10700,
+      "price_extra_tiers": {
+        "СНГ": 9500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "Эхокардиография сердца",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 9700,
+      "price_nonresident_kzt": 12300,
+      "price_extra_tiers": {
+        "СНГ": 10900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ слюнных желез (околоушные, поднижечелюстные, подъязычная)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 8300,
+      "price_nonresident_kzt": 10500,
+      "price_extra_tiers": {
+        "СНГ": 9300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 14
+    },
+    {
+      "name": "УЗИ ахиллового сухожилия",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "УЗИ сухожилий и связок кистевого сустава",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 12000,
+      "price_nonresident_kzt": 15200,
+      "price_extra_tiers": {
+        "СНГ": 13500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "УЗИ лобкового симфиза",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Ультразвуковая доплерография сосудов головы",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 9500,
+      "price_nonresident_kzt": 12000,
+      "price_extra_tiers": {
+        "СНГ": 10700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Ультразвуковая доплерография сосудов шеи (сонные, позвоночные артерии, яремная вена)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 9500,
+      "price_nonresident_kzt": 12000,
+      "price_extra_tiers": {
+        "СНГ": 10700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Ультразвуковая доплерография сосудов почек",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 9500,
+      "price_nonresident_kzt": 12000,
+      "price_extra_tiers": {
+        "СНГ": 10700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Ультразвуковая доплерография сосудов брюшной аорты",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 9500,
+      "price_nonresident_kzt": 12000,
+      "price_extra_tiers": {
+        "СНГ": 10700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Запись исследования на диск",
+      "code": null,
+      "unit": "услуга",
+      "section": "Подраздел 5.6. Кабинет ультрасонографии",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Исследование крови на малярийные плазмодии",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Обнаружение LE-клеток",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Определение времени свертывания, кровотечения (2 показателя)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1800,
+      "price_nonresident_kzt": 2400,
+      "price_extra_tiers": {
+        "СНГ": 2100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Реакция микропреципитации (антитела к возбудителю сифилиса)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2500,
+      "price_nonresident_kzt": 3200,
+      "price_extra_tiers": {
+        "СНГ": 2800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Тромбоэластограмма",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 13700,
+      "price_nonresident_kzt": 17300,
+      "price_extra_tiers": {
+        "СНГ": 15400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Определение в крови ревмафактора (качественный)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 15
+    },
+    {
+      "name": "Определение сахара крови (экспресс-метод)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Исследование кала на яйца гельминтов (2 показателя)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 4300,
+      "price_nonresident_kzt": 5500,
+      "price_extra_tiers": {
+        "СНГ": 4900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Исследование при эндоскопическом обслуживании (Helicobacter pylori)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 3200,
+      "price_nonresident_kzt": 4100,
+      "price_extra_tiers": {
+        "СНГ": 3600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Исследования кала на скрытую кровь",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 3900,
+      "price_nonresident_kzt": 5000,
+      "price_extra_tiers": {
+        "СНГ": 4400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Общий анализ мочи (6 показателей)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2600,
+      "price_nonresident_kzt": 3400,
+      "price_extra_tiers": {
+        "СНГ": 3000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Подсчет количества форменных элементов по Нечипоренко",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1800,
+      "price_nonresident_kzt": 2400,
+      "price_extra_tiers": {
+        "СНГ": 2100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Исследование спинно-мозговой жидкости (6 показателей)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2600,
+      "price_nonresident_kzt": 3400,
+      "price_extra_tiers": {
+        "СНГ": 3000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Исследование экссудатов, транссудатов (4 показателя)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение концентрационной способности почек, проба Зимницкого (10 показателей)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2500,
+      "price_nonresident_kzt": 3200,
+      "price_extra_tiers": {
+        "СНГ": 2800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение в моче белка Бенс-Джонса",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2500,
+      "price_nonresident_kzt": 3200,
+      "price_extra_tiers": {
+        "СНГ": 2800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение кардиомаркеров",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 4400,
+      "price_nonresident_kzt": 5600,
+      "price_extra_tiers": {
+        "СНГ": 5000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение газов крови (РО2, ПСО2, рН)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 5400,
+      "price_nonresident_kzt": 6900,
+      "price_extra_tiers": {
+        "СНГ": 6100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение ревмафактора (количественный)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2500,
+      "price_nonresident_kzt": 3200,
+      "price_extra_tiers": {
+        "СНГ": 2800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение антистрептолизина О",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение активности аланинаминотрансферазы в сыворотке крови АЛТ",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение альбумина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение активности щелочной фосфатазы в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1900,
+      "price_nonresident_kzt": 2500,
+      "price_extra_tiers": {
+        "СНГ": 2200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 16
+    },
+    {
+      "name": "Определение активности амилазы в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение активности аспартатаминотрансферазы в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1700,
+      "price_nonresident_kzt": 2300,
+      "price_extra_tiers": {
+        "СНГ": 2000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение активности гаммаглутаминтранпептидазы в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1800,
+      "price_nonresident_kzt": 2400,
+      "price_extra_tiers": {
+        "СНГ": 2100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение С - реактивного белка",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 3000,
+      "price_nonresident_kzt": 3900,
+      "price_extra_tiers": {
+        "СНГ": 3400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение общего кальция в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1900,
+      "price_nonresident_kzt": 2500,
+      "price_extra_tiers": {
+        "СНГ": 2200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение активности креатинфосфокиназы в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2200,
+      "price_nonresident_kzt": 2800,
+      "price_extra_tiers": {
+        "СНГ": 2500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение хлора в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение креатинина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1900,
+      "price_nonresident_kzt": 2500,
+      "price_extra_tiers": {
+        "СНГ": 2200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение холестерина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2400,
+      "price_nonresident_kzt": 3100,
+      "price_extra_tiers": {
+        "СНГ": 2700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение холестерина липопротеидов высокой плотности в сыворотке крови ЛПВП",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2400,
+      "price_nonresident_kzt": 3100,
+      "price_extra_tiers": {
+        "СНГ": 2700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение холестерина липопротеидов низкой плотности в сыворотке крови ЛПНП",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2400,
+      "price_nonresident_kzt": 3100,
+      "price_extra_tiers": {
+        "СНГ": 2700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение глюкозы в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1700,
+      "price_nonresident_kzt": 2300,
+      "price_extra_tiers": {
+        "СНГ": 2000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение железа в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение активности лактатдегидрогеназы в сыворотке крови (ЛДГ)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1900,
+      "price_nonresident_kzt": 2500,
+      "price_extra_tiers": {
+        "СНГ": 2200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение калий в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение натрий в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 17
+    },
+    {
+      "name": "Определение общего билирубина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1700,
+      "price_nonresident_kzt": 2300,
+      "price_extra_tiers": {
+        "СНГ": 2000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение общего белка в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1700,
+      "price_nonresident_kzt": 2300,
+      "price_extra_tiers": {
+        "СНГ": 2000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение триглецириды в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2300,
+      "price_nonresident_kzt": 3000,
+      "price_extra_tiers": {
+        "СНГ": 2600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение мочевой кислоты в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1900,
+      "price_nonresident_kzt": 2500,
+      "price_extra_tiers": {
+        "СНГ": 2200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение мочевины в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1700,
+      "price_nonresident_kzt": 2300,
+      "price_extra_tiers": {
+        "СНГ": 2000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Общий анализ крови (без лейкоцитарной формулы)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2200,
+      "price_nonresident_kzt": 2800,
+      "price_extra_tiers": {
+        "СНГ": 2500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Общий анализ крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2500,
+      "price_nonresident_kzt": 3200,
+      "price_extra_tiers": {
+        "СНГ": 2800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Исследование крови на электролиты (Na/K/Ca/Cl)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 5800,
+      "price_nonresident_kzt": 7300,
+      "price_extra_tiers": {
+        "СНГ": 6500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение протромбинового времени, протромбинового индекса (ПТИ)",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение тромбинового времени",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение АПТВ (АЧТВ) - активированного парциального тромбопластинового времени",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1400,
+      "price_nonresident_kzt": 1800,
+      "price_extra_tiers": {
+        "СНГ": 1600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение фибриногена",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1800,
+      "price_nonresident_kzt": 2400,
+      "price_extra_tiers": {
+        "СНГ": 2100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Концентрация РФМК",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 1500,
+      "price_nonresident_kzt": 2000,
+      "price_extra_tiers": {
+        "СНГ": 1700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение ферритина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 6100,
+      "price_nonresident_kzt": 7800,
+      "price_extra_tiers": {
+        "СНГ": 6900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение трансферрина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение прямого билирубина в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 3600,
+      "price_nonresident_kzt": 4600,
+      "price_extra_tiers": {
+        "СНГ": 4100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Определение фосфора в сыворотке крови",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 3800,
+      "price_nonresident_kzt": 4900,
+      "price_extra_tiers": {
+        "СНГ": 4300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Исследование синовиальной жидкости общеклиническое, ручным методом",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.1. Общеклиническая лаборатория",
+      "price_resident_kzt": 2700,
+      "price_nonresident_kzt": 3500,
+      "price_extra_tiers": {
+        "СНГ": 3100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 18
+    },
+    {
+      "name": "Гепатит В",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.2. Исследования на инфекционные заболевания",
+      "price_resident_kzt": 3600,
+      "price_nonresident_kzt": 4600,
+      "price_extra_tiers": {
+        "СНГ": 4100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Гепатит С",
+      "code": null,
+      "unit": "исследование",
+      "section": "Подраздел 6.2. Исследования на инфекционные заболевания",
+      "price_resident_kzt": 3600,
+      "price_nonresident_kzt": 4600,
+      "price_extra_tiers": {
+        "СНГ": 4100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Забор крови из вены",
+      "code": null,
+      "unit": "процедура",
+      "section": "Подраздел 6.3. Забор крови",
+      "price_resident_kzt": 800,
+      "price_nonresident_kzt": 1100,
+      "price_extra_tiers": {
+        "СНГ": 900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Забор крови из пальца",
+      "code": null,
+      "unit": "процедура",
+      "section": "Подраздел 6.3. Забор крови",
+      "price_resident_kzt": 700,
+      "price_nonresident_kzt": 900,
+      "price_extra_tiers": {
+        "СНГ": 800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Взятие мазка",
+      "code": null,
+      "unit": "процедура",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 800,
+      "price_nonresident_kzt": 1100,
+      "price_extra_tiers": {
+        "СНГ": 900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование носа на патогенный стафилококк",
+      "code": null,
+      "unit": "процедура",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 1300,
+      "price_nonresident_kzt": 1700,
+      "price_extra_tiers": {
+        "СНГ": 1500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование зева на патогенный стафилококк",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 1300,
+      "price_nonresident_kzt": 1700,
+      "price_extra_tiers": {
+        "СНГ": 1500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование кала на патогенную флору",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 2600,
+      "price_nonresident_kzt": 3400,
+      "price_extra_tiers": {
+        "СНГ": 3000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Определение чувствительности микроорганизмов к антибиотикам",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 6000,
+      "price_nonresident_kzt": 7700,
+      "price_extra_tiers": {
+        "СНГ": 6800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование мочи, мокроты",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 4200,
+      "price_nonresident_kzt": 5400,
+      "price_extra_tiers": {
+        "СНГ": 4800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование кала на кишечный дисбактериоз",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 11000,
+      "price_nonresident_kzt": 13900,
+      "price_extra_tiers": {
+        "СНГ": 12400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование крови на стерильность",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование крови на гемокультуру",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование грудного молока (каждая молочная железа отдельно)",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 4600,
+      "price_nonresident_kzt": 5900,
+      "price_extra_tiers": {
+        "СНГ": 5200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 19
+    },
+    {
+      "name": "Бактериологическое исследование мазков из носа и зева на патогенный стафилококк с положительным результатом",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 2400,
+      "price_nonresident_kzt": 3100,
+      "price_extra_tiers": {
+        "СНГ": 2700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование отделяемого носа",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 4100,
+      "price_nonresident_kzt": 5200,
+      "price_extra_tiers": {
+        "СНГ": 4600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование мазка отделяемого ран",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 4600,
+      "price_nonresident_kzt": 5900,
+      "price_extra_tiers": {
+        "СНГ": 5200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование аутопсийного материала",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 4600,
+      "price_nonresident_kzt": 5900,
+      "price_extra_tiers": {
+        "СНГ": 5200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование мазка экссудатов, транссудатов, абсцессов, катетеров, стентов, дренажей и прочие",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 4600,
+      "price_nonresident_kzt": 5900,
+      "price_extra_tiers": {
+        "СНГ": 5200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование операционного материала и суставной жидкости на перипротезные инфекции",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 7500,
+      "price_nonresident_kzt": 9500,
+      "price_extra_tiers": {
+        "СНГ": 8400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование фекалий на патогенную (сальмонеллы, шигеллы, энтеропатогенные эшерихии), условно-патогенную кишечную микрофлору",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 6900,
+      "price_nonresident_kzt": 8800,
+      "price_extra_tiers": {
+        "СНГ": 7800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование биоматериала на сальмонеллы (испражнений, мочи, желчи)",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 6000,
+      "price_nonresident_kzt": 7700,
+      "price_extra_tiers": {
+        "СНГ": 6800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование шовного, перевязочного материала, инструментария на стерильность (10 анализов)",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 6300,
+      "price_nonresident_kzt": 8000,
+      "price_extra_tiers": {
+        "СНГ": 7100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование рук хирургов и других членов бригады, операционного поля на стерильность (10 анализов)",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 5800,
+      "price_nonresident_kzt": 7300,
+      "price_extra_tiers": {
+        "СНГ": 6500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Определение эффективность действия антисептиков (дезинфектантов) методом их чувствительности к музейным штаммам",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 2700,
+      "price_nonresident_kzt": 3500,
+      "price_extra_tiers": {
+        "СНГ": 3100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование патологического биоматериала на грибы рода кандида и аспергиллы",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 3500,
+      "price_nonresident_kzt": 4500,
+      "price_extra_tiers": {
+        "СНГ": 4000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 20
+    },
+    {
+      "name": "Бактериологическое исследование мазка из носоглоточной слизи на менингококк",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 7100,
+      "price_nonresident_kzt": 9000,
+      "price_extra_tiers": {
+        "СНГ": 8000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Ликвор на минингококк без отбора",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Бактериологическое исследование крови на менингококк",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 14100,
+      "price_nonresident_kzt": 17700,
+      "price_extra_tiers": {
+        "СНГ": 15800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Серологическое исследование крови на бруцеллез методом РА реакция Райта",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 3100,
+      "price_nonresident_kzt": 4000,
+      "price_extra_tiers": {
+        "СНГ": 3500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Серологическое исследование крови на бруцеллез методом РА реакция Хеддельсона",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": 2600,
+      "price_extra_tiers": {
+        "СНГ": 2300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Бактериологическое исследование биоматериала на анаэробы",
+      "code": null,
+      "unit": "исследование",
+      "section": "7. Бактериологическая лаборатория",
+      "price_resident_kzt": 5100,
+      "price_nonresident_kzt": 6500,
+      "price_extra_tiers": {
+        "СНГ": 5800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Стерилизация бикса КСК-18,КСК-12 (с тестовыми индикаторами)",
+      "code": null,
+      "unit": "бикс",
+      "section": "Раздел 8. Стерилизационная лаборатория",
+      "price_resident_kzt": 4400,
+      "price_nonresident_kzt": 5600,
+      "price_extra_tiers": {
+        "СНГ": 5000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Стерилизация бикса КСК-18,КСК-12 (без тестовых индикаторов)",
+      "code": null,
+      "unit": "бикс",
+      "section": "Раздел 8. Стерилизационная лаборатория",
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": 3600,
+      "price_extra_tiers": {
+        "СНГ": 3200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Стерилизация бикса КСК-9,КСК-6, КСК-3 (с тестовыми индикаторами)",
+      "code": null,
+      "unit": "бикс",
+      "section": "Раздел 8. Стерилизационная лаборатория",
+      "price_resident_kzt": 3900,
+      "price_nonresident_kzt": 5000,
+      "price_extra_tiers": {
+        "СНГ": 4400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Стерилизация бикса КСК-9,КСК-6, КСК-3 (без тестовых индикаторов)",
+      "code": null,
+      "unit": "бикс",
+      "section": "Раздел 8. Стерилизационная лаборатория",
+      "price_resident_kzt": 2200,
+      "price_nonresident_kzt": 2800,
+      "price_extra_tiers": {
+        "СНГ": 2500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Внутривенный наркоз при манипуляциях",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 27500,
+      "price_nonresident_kzt": 34500,
+      "price_extra_tiers": {
+        "СНГ": 30800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Внутривенный наркоз при операциях",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 29700,
+      "price_nonresident_kzt": 37300,
+      "price_extra_tiers": {
+        "СНГ": 33300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Интубационный наркоз",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 42300,
+      "price_nonresident_kzt": 53100,
+      "price_extra_tiers": {
+        "СНГ": 47400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Проводниковая анестезия",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 44600,
+      "price_nonresident_kzt": 56000,
+      "price_extra_tiers": {
+        "СНГ": 50000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Катетеризация центральной вены",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 33000,
+      "price_nonresident_kzt": 41500,
+      "price_extra_tiers": {
+        "СНГ": 37000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 21
+    },
+    {
+      "name": "Ингаляционный наркоз",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 42900,
+      "price_nonresident_kzt": 53900,
+      "price_extra_tiers": {
+        "СНГ": 48100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Эпидуральная анестезия",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 27800,
+      "price_nonresident_kzt": 35000,
+      "price_extra_tiers": {
+        "СНГ": 31200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Спинальная анестезия",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 22300,
+      "price_nonresident_kzt": 28000,
+      "price_extra_tiers": {
+        "СНГ": 25000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Лечение алкогольного абстинентного синдрома",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 69300,
+      "price_nonresident_kzt": 87100,
+      "price_extra_tiers": {
+        "СНГ": 77700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Палаты ОАиР для больных (средней степени тяжести)",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 102300,
+      "price_nonresident_kzt": 128400,
+      "price_extra_tiers": {
+        "СНГ": 114600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Палаты ОАиР для больных (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 118800,
+      "price_nonresident_kzt": 149100,
+      "price_extra_tiers": {
+        "СНГ": 133100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Консультация анестезиолога/реаниматолога (дмн, профессора) (первичная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 19800,
+      "price_nonresident_kzt": 24900,
+      "price_extra_tiers": {
+        "СНГ": 22200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Консультация анестезиолога/реаниматолога (дмн, профессора) (повторная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 9900,
+      "price_nonresident_kzt": 12500,
+      "price_extra_tiers": {
+        "СНГ": 11100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Консультация анестезиолога/реаниматолога кмн (первичная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 16500,
+      "price_nonresident_kzt": 20800,
+      "price_extra_tiers": {
+        "СНГ": 18500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Консультация анестезиолога/реаниматолога кмн (повторная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 8300,
+      "price_nonresident_kzt": 10500,
+      "price_extra_tiers": {
+        "СНГ": 9300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Консультация анестезиолога/реаниматолога (первичная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 13200,
+      "price_nonresident_kzt": 16600,
+      "price_extra_tiers": {
+        "СНГ": 14800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Консультация анестезиолога/реаниматолога (повторная)",
+      "code": null,
+      "unit": "посещение",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Продленная вено-венозная гемодиафильтрация",
+      "code": null,
+      "unit": "процедура",
+      "section": "Раздел 9. Отделение анестезиологии и реанимации",
+      "price_resident_kzt": 357500,
+      "price_nonresident_kzt": 448500,
+      "price_extra_tiers": {
+        "СНГ": 400400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Переливание эритроцитсодержащих сред",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 13000,
+      "price_nonresident_kzt": 16400,
+      "price_extra_tiers": {
+        "СНГ": 14600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Переливание СЗП",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 7400,
+      "price_nonresident_kzt": 9300,
+      "price_extra_tiers": {
+        "СНГ": 8300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Скрининг антиэритроцитарных антител",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 5000,
+      "price_nonresident_kzt": 6300,
+      "price_extra_tiers": {
+        "СНГ": 5600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Определение группы крови перекрестным методом с применением поликлонов",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 2900,
+      "price_nonresident_kzt": 3700,
+      "price_extra_tiers": {
+        "СНГ": 3300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Проведение реинфузии на аппарате «С.А.Т.S Plus»",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 314900,
+      "price_nonresident_kzt": 395100,
+      "price_extra_tiers": {
+        "СНГ": 352700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Трансфузия Альбумина",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 7800,
+      "price_nonresident_kzt": 9900,
+      "price_extra_tiers": {
+        "СНГ": 8800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Переливание донорских тромбоцитов",
+      "code": null,
+      "unit": "манипуляция",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 6600,
+      "price_nonresident_kzt": 8300,
+      "price_extra_tiers": {
+        "СНГ": 7400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 22
+    },
+    {
+      "name": "Стационар дневного пребывания (без питания, без медикаментов)",
+      "code": null,
+      "unit": "день",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 9100,
+      "price_extra_tiers": {
+        "СНГ": 8100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Стационар дневного пребывания (без питания, с медикаментами)",
+      "code": null,
+      "unit": "день",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 9400,
+      "price_nonresident_kzt": 11900,
+      "price_extra_tiers": {
+        "СНГ": 10600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Стационар дневного пребывания (с питанием, с медикаментами)",
+      "code": null,
+      "unit": "день",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 12100,
+      "price_nonresident_kzt": 15300,
+      "price_extra_tiers": {
+        "СНГ": 13600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Стационар дневного пребывания (с питанием, без медикаментов)",
+      "code": null,
+      "unit": "день",
+      "section": "Раздел 10. Отделение трансфузиологии",
+      "price_resident_kzt": 9700,
+      "price_nonresident_kzt": 12300,
+      "price_extra_tiers": {
+        "СНГ": 10900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Стационар круглосуточного пребывания (с питанием, с медикаментами)",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Подраздел 11.2. Круглосуточный стационар",
+      "price_resident_kzt": 23100,
+      "price_nonresident_kzt": 29100,
+      "price_extra_tiers": {
+        "СНГ": 25900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Доплата за пребывание в отдельной 2-х местной палате",
+      "code": null,
+      "unit": "койко-день",
+      "section": "Подраздел 11.2. Круглосуточный стационар",
+      "price_resident_kzt": 7100,
+      "price_nonresident_kzt": 9000,
+      "price_extra_tiers": {
+        "СНГ": 8000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Эндопротезирование коленного сустава (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 440000,
+      "price_nonresident_kzt": 552000,
+      "price_extra_tiers": {
+        "СНГ": 492800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Эндопротезирование коленного сустава (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 440000,
+      "price_nonresident_kzt": 552000,
+      "price_extra_tiers": {
+        "СНГ": 492800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Эндопротезирование тазобедренного сустава (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 440000,
+      "price_nonresident_kzt": 552000,
+      "price_extra_tiers": {
+        "СНГ": 492800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Эндопротезирование тазобедренного сустава (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 440000,
+      "price_nonresident_kzt": 552000,
+      "price_extra_tiers": {
+        "СНГ": 492800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Эндопротезирование плечевого сустава",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 440000,
+      "price_nonresident_kzt": 552000,
+      "price_extra_tiers": {
+        "СНГ": 492800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Ревизионное эндопротезирование коленного сустава (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 605000,
+      "price_nonresident_kzt": 759000,
+      "price_extra_tiers": {
+        "СНГ": 677600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Ревизионное эндопротезирование коленного сустава (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 605000,
+      "price_nonresident_kzt": 759000,
+      "price_extra_tiers": {
+        "СНГ": 677600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Ревизионное эндопротезирование тазобедренного сустава (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 605000,
+      "price_nonresident_kzt": 759000,
+      "price_extra_tiers": {
+        "СНГ": 677600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Ревизионное эндопротезирование тазобедренного сустава (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 605000,
+      "price_nonresident_kzt": 759000,
+      "price_extra_tiers": {
+        "СНГ": 677600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 23
+    },
+    {
+      "name": "Робот-ассистированное эндопротезирование коленного сустава (в стоимость операции, не входит аренда робот-ассистента МАКО)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 1100000,
+      "price_nonresident_kzt": 1379900,
+      "price_extra_tiers": {
+        "СНГ": 1232000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Робот-ассистированное эндопротезирование тазобедренного сустава (в стоимость операции, не входит аренда робот-ассистента МАКО)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 1100000,
+      "price_nonresident_kzt": 1379900,
+      "price_extra_tiers": {
+        "СНГ": 1232000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Робот-ассистированное одномыщелковое эндопротезирование коленного сустава (в стоимость операции, не входит аренда робот-ассистента МАКО)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.1. Эндопротезирование крупных суставов (Ортопедия №3, №4, №7)",
+      "price_resident_kzt": 1100000,
+      "price_nonresident_kzt": 1379900,
+      "price_extra_tiers": {
+        "СНГ": 1232000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Церебральный паралич и другие паралитические синдромы",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.3. Патологии позвоночника (Ортопедия №1 и №6)",
+      "price_resident_kzt": 121600,
+      "price_nonresident_kzt": 152600,
+      "price_extra_tiers": {
+        "СНГ": 136200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Сколиоз, кифосколиоз (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.3. Патологии позвоночника (Ортопедия №1 и №6)",
+      "price_resident_kzt": 695200,
+      "price_nonresident_kzt": 872200,
+      "price_extra_tiers": {
+        "СНГ": 778700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Сколиоз, кифосколиоз (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.3. Патологии позвоночника (Ортопедия №1 и №6)",
+      "price_resident_kzt": 1058800,
+      "price_nonresident_kzt": 1328300,
+      "price_extra_tiers": {
+        "СНГ": 1185900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Микрохирургическое удаление грыжи диска на поясничном уровне",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.3. Патологии позвоночника (Ортопедия №1 и №6)",
+      "price_resident_kzt": 165000,
+      "price_nonresident_kzt": 207000,
+      "price_extra_tiers": {
+        "СНГ": 184800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Острая ЧМТ и травма позвоночника, спинного мозга, сочетанная ЧМТ (последствия ЧМТ) последствия травм позвоночника и спинного мозга",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.4. Хирургии позвоночника и нейротравматология (Травматология №1)",
+      "price_resident_kzt": 363000,
+      "price_nonresident_kzt": 455400,
+      "price_extra_tiers": {
+        "СНГ": 406600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Периферических нервов, повреждения плечевого сплетения",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.4. Хирургии позвоночника и нейротравматология (Травматология №1)",
+      "price_resident_kzt": 206400,
+      "price_nonresident_kzt": 233200,
+      "price_extra_tiers": {
+        "СНГ": 231200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Остеохондроз шейного, грудного и поясничного отделов позвоночника. Оперативное лечение 1 категория сложности",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.4. Хирургии позвоночника и нейротравматология (Травматология №1)",
+      "price_resident_kzt": 84700,
+      "price_nonresident_kzt": 95600,
+      "price_extra_tiers": {
+        "СНГ": 94900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Остеохондроз шейного, грудного и поясничного отделов позвоночника. Оперативное лечение 5 категория сложности",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.4. Хирургии позвоночника и нейротравматология (Травматология №1)",
+      "price_resident_kzt": 253800,
+      "price_nonresident_kzt": 286700,
+      "price_extra_tiers": {
+        "СНГ": 284300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 24
+    },
+    {
+      "name": "Повреждение мениска",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.5. Артроскопия и спортивная травма (Ортопедия №5 и АСТ)",
+      "price_resident_kzt": 311300,
+      "price_nonresident_kzt": 390600,
+      "price_extra_tiers": {
+        "СНГ": 348700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Повреждение связок, операция Банкарта, хондропластика",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.5. Артроскопия и спортивная травма (Ортопедия №5 и АСТ)",
+      "price_resident_kzt": 337700,
+      "price_nonresident_kzt": 423700,
+      "price_extra_tiers": {
+        "СНГ": 378300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Лечение стволовыми клетками без ИМН",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.5. Артроскопия и спортивная травма (Ортопедия №5 и АСТ)",
+      "price_resident_kzt": 39600,
+      "price_nonresident_kzt": 49800,
+      "price_extra_tiers": {
+        "СНГ": 44400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Лечение стволовыми клетками с ИМН",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.5. Артроскопия и спортивная травма (Ортопедия №5 и АСТ)",
+      "price_resident_kzt": 237600,
+      "price_nonresident_kzt": 298200,
+      "price_extra_tiers": {
+        "СНГ": 266200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Коррекция О и Х-образные деформации нижних конечностей (1 нога)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.6. Эстетическая ортопедия (Ортопедия №2)",
+      "price_resident_kzt": 341900,
+      "price_nonresident_kzt": 429000,
+      "price_extra_tiers": {
+        "СНГ": 383000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Врожденная деформация трудной клетки (воронкообразная, килевидная и др.)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.6. Эстетическая ортопедия (Ортопедия №2)",
+      "price_resident_kzt": 394700,
+      "price_nonresident_kzt": 495200,
+      "price_extra_tiers": {
+        "СНГ": 442100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Приобретенные деформации ног (шишка или \"косточка\" на ноге) (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.6. Эстетическая ортопедия (Ортопедия №2)",
+      "price_resident_kzt": 262700,
+      "price_nonresident_kzt": 329700,
+      "price_extra_tiers": {
+        "СНГ": 294300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Приобретенные деформации ног (шишка или \"косточка\" на ноге) (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.6. Эстетическая ортопедия (Ортопедия №2)",
+      "price_resident_kzt": 328700,
+      "price_nonresident_kzt": 412400,
+      "price_extra_tiers": {
+        "СНГ": 368200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Последствия повреждений сосудистых, нервных стволов конечностей",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 343200,
+      "price_nonresident_kzt": 430600,
+      "price_extra_tiers": {
+        "СНГ": 384400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Травма сосудисто-нервного пучка на уровне плечевого пояса, верхних конечностей и голени",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 259600,
+      "price_nonresident_kzt": 325700,
+      "price_extra_tiers": {
+        "СНГ": 290800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Травмы запястья, кисти и их последствия",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 363000,
+      "price_nonresident_kzt": 455400,
+      "price_extra_tiers": {
+        "СНГ": 406600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Варикозное расширение вен нижних конечностей в стадии декомпенсации",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 138600,
+      "price_nonresident_kzt": 174000,
+      "price_extra_tiers": {
+        "СНГ": 155300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Травматическая ампутация запястья и кисти",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 277200,
+      "price_nonresident_kzt": 347800,
+      "price_extra_tiers": {
+        "СНГ": 310500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 25
+    },
+    {
+      "name": "Эмболия и тромбоз вен (подострая, хроническая и посттромботическая окклюзия)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 336600,
+      "price_nonresident_kzt": 422300,
+      "price_extra_tiers": {
+        "СНГ": 377000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Эмболия и тромбоз аорты и артерий (подострая, хроническая и посттромботическая окклюзия)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 554400,
+      "price_nonresident_kzt": 695600,
+      "price_extra_tiers": {
+        "СНГ": 621000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Травматическая ампутация плечевого пояса, плеча, тазобедренного сустава, бедра, голени, кисти, предплечья, пальцев кисти",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 765600,
+      "price_nonresident_kzt": 960400,
+      "price_extra_tiers": {
+        "СНГ": 857500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Травма сосудов и нервов на уровне голеностопного сустава, стопы, тазобедренного сустава и бедра",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 330000,
+      "price_nonresident_kzt": 414000,
+      "price_extra_tiers": {
+        "СНГ": 369600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Приобретенные деформации пальцев рук (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 132000,
+      "price_nonresident_kzt": 165700,
+      "price_extra_tiers": {
+        "СНГ": 147900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Приобретенные деформации пальцев рук (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.7. Сосудистая хирургия и травма кисти  (Травматология №3)",
+      "price_resident_kzt": 171600,
+      "price_nonresident_kzt": 215300,
+      "price_extra_tiers": {
+        "СНГ": 192200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Послеоперационные осложнения, связанные с внутренними и внешними причинами (ортопедическими протезными устройствами, имплантатами и трансплататами). Гнойная костная патология",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 260700,
+      "price_nonresident_kzt": 327100,
+      "price_extra_tiers": {
+        "СНГ": 292000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Пиогенные артриты",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 228800,
+      "price_nonresident_kzt": 26800,
+      "price_extra_tiers": {
+        "СНГ": 256300
+      },
+      "currency_original": "KZT",
+      "note": "UNCERTAIN: дальнее зарубежье reads as 26 800 in image — likely truncated (possibly 268 800 or 286 800)",
+      "page": 26
+    },
+    {
+      "name": "Раны различной локализации, осложненные размножжением мягких тканей, дефектом кожных покровов",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 245300,
+      "price_nonresident_kzt": 279000,
+      "price_extra_tiers": {
+        "СНГ": 274800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Термический ожог 1-2-3АБ степени (10-20% поверхности тела)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 43800,
+      "price_nonresident_kzt": 49800,
+      "price_extra_tiers": {
+        "СНГ": 49100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Термический ожог 1-2-3АБ степени (20-30% поверхности тела)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 64400,
+      "price_nonresident_kzt": 73300,
+      "price_extra_tiers": {
+        "СНГ": 72200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Термический ожог 1-2-3АБ степени (30% и более поверхности тела)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 97200,
+      "price_nonresident_kzt": 110000,
+      "price_extra_tiers": {
+        "СНГ": 108900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Последствия электротравмы, требующие кожно-мышечных пластических операций",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.8. Отделение гнойной травматологии и последствий травм и ожогов (травматология №4)",
+      "price_resident_kzt": 126500,
+      "price_nonresident_kzt": 144000,
+      "price_extra_tiers": {
+        "СНГ": 141700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 26
+    },
+    {
+      "name": "Остеосинтез голени, лодыжек, плеча, предплечья, пяточной кости, надколенника, ключицы",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 145200,
+      "price_nonresident_kzt": 182300,
+      "price_extra_tiers": {
+        "СНГ": 162700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Остеосинтез пястных костей, плюстных костей",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 106700,
+      "price_nonresident_kzt": 134000,
+      "price_extra_tiers": {
+        "СНГ": 119600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Остеосинтез костей бедра",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Остеосинтез костей таза",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 367400,
+      "price_nonresident_kzt": 460900,
+      "price_extra_tiers": {
+        "СНГ": 411500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Тупая травма живота с подозрением на повреждение внутренних органов, требующая динамического наблюдения или оперативного лечения при повреждениях селезенки, печени, почек, поджелудочной железы, тонкого и толстого кишечника, мочевого пузыря (Оперативное лечение при повреждении 1 органа)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 236500,
+      "price_nonresident_kzt": 296700,
+      "price_extra_tiers": {
+        "СНГ": 264900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Тупая травма грудной клетки с подозрением на повреждения органов грудной клетки (сердца, средостения, легких, крупных сосудов), множественные переломы ребер, сопровождающиеся гемо и пневмотораксом (Оперативное лечение при повреждении 1 органа)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 227700,
+      "price_nonresident_kzt": 285800,
+      "price_extra_tiers": {
+        "СНГ": 255100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Политравма, сопровождающаяся повреждениями грудной клетки, органов брюшной полости, черепа, конечностей, и нуждающаяся в динамическом наблюдении или в экстренном хирургическом вмешательстве на одной из полостей в специализированном отделении (Оперативное лечение при повреждении 1 органа)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 330000,
+      "price_nonresident_kzt": 414000,
+      "price_extra_tiers": {
+        "СНГ": 369600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Диагностические лапароскопии и торокоскопии",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 92400,
+      "price_nonresident_kzt": 116000,
+      "price_extra_tiers": {
+        "СНГ": 103500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Неосложненные паховые и пупочные грыжи",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 66000,
+      "price_nonresident_kzt": 82900,
+      "price_extra_tiers": {
+        "СНГ": 74000
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Лапароскопическая холецистэктомия",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 132000,
+      "price_nonresident_kzt": 165700,
+      "price_extra_tiers": {
+        "СНГ": 147900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Острый аппендицит (неосложненный)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 92400,
+      "price_nonresident_kzt": 116000,
+      "price_extra_tiers": {
+        "СНГ": 103500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 27
+    },
+    {
+      "name": "Хронический калькулезный холецистит",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 112200,
+      "price_nonresident_kzt": 140800,
+      "price_extra_tiers": {
+        "СНГ": 125700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Грыжа вентральная",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 101800,
+      "price_nonresident_kzt": 127800,
+      "price_extra_tiers": {
+        "СНГ": 114100
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Обычная язва",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.9. Общая травматология",
+      "price_resident_kzt": 189800,
+      "price_nonresident_kzt": 238200,
+      "price_extra_tiers": {
+        "СНГ": 212600
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Приобретенные деформации конечностей (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Приобретенные деформации конечностей (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Другие специфические поражения суставов, нуждающиеся в реконструктивно-восстановительных операциях (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Другие специфические поражения суставов, нуждающиеся в реконструктивно-восстановительных операциях (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Энтезопатии нижней конечности, исключая стопу. Другие энтезапатии. Остеопатии и хондропатии (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 132000,
+      "price_nonresident_kzt": 165700,
+      "price_extra_tiers": {
+        "СНГ": 147900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Энтезопатии нижней конечности, исключая стопу. Другие энтезапатии. Остеопатии и хондропатии (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 171600,
+      "price_nonresident_kzt": 215300,
+      "price_extra_tiers": {
+        "СНГ": 192200
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Ложный сустав или несрастание перелома (псевдоартроз). Замедленное сращение перелома. Стрессовые и усталостные переломы. Патологические переломы, остеонекроз костей опорно-двигательного аппарата (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Ложный сустав или несрастание перелома (псевдоартроз). Замедленное сращение перелома. Стрессовые и усталостные переломы. Патологические переломы, остеонекроз костей опорно-двигательного аппарата (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Юношеская остехондропатия (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 158400,
+      "price_nonresident_kzt": 198800,
+      "price_extra_tiers": {
+        "СНГ": 177500
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Юношеская остехондропатия (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Врожденные заболевания и костно-мышечные деформации кисти, колена, бедра, голени, стопы, таза, позвоночника. Дефекты, укорачивающие верхние и нижние конечности (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Врожденные заболевания и костно-мышечные деформации кисти, колена, бедра, голени, стопы, таза, позвоночника. Дефекты, укорачивающие верхние и нижние конечности (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Доброкачественное новообразование костей и суставов. Остеохондродисплазии, костные кисты, костнохрящевые экзостозы, хондрома, остеома, остеобластокластома (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 28
+    },
+    {
+      "name": "Доброкачественное новообразование костей и суставов. Остеохондродисплазии, костные кисты, костнохрящевые экзостозы, хондрома, остеома, остеобластокластома (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Посттравматические деформации (ригидность, контрактура, анкилоз) опорно-двигательного аппарата, последствия травм суставов, конечностей, позвоночника, грудной клетки и таза (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Посттравматические деформации (ригидность, контрактура, анкилоз) опорно-двигательного аппарата, последствия травм суставов, конечностей, позвоночника, грудной клетки и таза (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Последствия травм, переломов, вывихов, врожденные заболевания и приобретенные деформации, пограничные состояния, дегенеративные заболевания мягких тканей и суставов, а также дегенеративные и альгодистрофические состояния после травм, закрытых манипуляций и хирургических вмешательств, характеризующиеся нарушением функции суставов, отдельных сегментов, структур (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Последствия травм, переломов, вывихов, врожденные заболевания и приобретенные деформации, пограничные состояния, дегенеративные заболевания мягких тканей и суставов, а также дегенеративные и альгодистрофические состояния после травм, закрытых манипуляций и хирургических вмешательств, характеризующиеся нарушением функции суставов, отдельных сегментов, структур (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Поражение надколенника (привычный вывих надколенника и др). Внутрисуставные поражения колена (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 145200,
+      "price_nonresident_kzt": 182300,
+      "price_extra_tiers": {
+        "СНГ": 162700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Поражение надколенника (привычный вывих надколенника и др). Внутрисуставные поражения колена (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Кальцификация и оссификация мышцы. Другие поражения мышцы. Синовиты и теносиновиты. Поражения синовиальных оболочек и сухожилий. Ганглион. Бурсопатии. Фибропластические поражения (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 145200,
+      "price_nonresident_kzt": 182300,
+      "price_extra_tiers": {
+        "СНГ": 162700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Кальцификация и оссификация мышцы. Другие поражения мышцы. Синовиты и теносиновиты. Поражения синовиальных оболочек и сухожилий. Ганглион. Бурсопатии. Фибропластические поражения (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Поражения плеча. Адгезивный капсулит плеча. Синдром сдавления ротатора плеча. Тендинит двуглавой мышцы. Кальцифицирующий тендинит плеча. Другие поражения плеча (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 145200,
+      "price_nonresident_kzt": 182300,
+      "price_extra_tiers": {
+        "СНГ": 162700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Поражения плеча. Адгезивный капсулит плеча. Синдром сдавления ротатора плеча. Тендинит двуглавой мышцы. Кальцифицирующий тендинит плеча. Другие поражения плеча (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 29
+    },
+    {
+      "name": "Деформирующие артрозы крупных суставов (локтевых, плечевых, лучезапястных) (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Деформирующие артрозы крупных суставов (локтевых, плечевых, лучезапястных) (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Сросшиеся и срастающиеся переломы, посттравматические, послеоперационные контрактуры суставов, ложные суставы, последствия оперативных вмешательств с использованием имплантантов и требующих повторных оперативных или консервативных вмешательств и реабилитационных мероприятий (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Сросшиеся и срастающиеся переломы, посттравматические, послеоперационные контрактуры суставов, ложные суставы, последствия оперативных вмешательств с использованием имплантантов и требующих повторных оперативных или консервативных вмешательств и реабилитационных мероприятий (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Застарелые осложненные повреждения сухожилий на уровне предплечья и кисти, требующие пластики (средней степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Застарелые осложненные повреждения сухожилий на уровне предплечья и кисти, требующие пластики (тяжелой степени тяжести)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 264000,
+      "price_nonresident_kzt": 331200,
+      "price_extra_tiers": {
+        "СНГ": 295700
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Радиочастотная денервация (РЧД) (не более 2х зон)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 198000,
+      "price_nonresident_kzt": 248500,
+      "price_extra_tiers": {
+        "СНГ": 221800
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Радиочастотная денервация (РЧД) дополнительная зона (дополнительная 1 зона)",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.10. Общая ортопедия",
+      "price_resident_kzt": 132000,
+      "price_nonresident_kzt": 165700,
+      "price_extra_tiers": {
+        "СНГ": 147900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Снятие металлоконструкций",
+      "code": null,
+      "unit": "операция",
+      "section": "Подраздел 12.11. Снятие металлоконструкций",
+      "price_resident_kzt": 77000,
+      "price_nonresident_kzt": 96700,
+      "price_extra_tiers": {
+        "СНГ": 86300
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Транспортировка пациента (на реанимационном санитарном автофургоне Mercedes-Benz Sprinter)",
+      "code": null,
+      "unit": "час",
+      "section": "Раздел 13. Транспортные услуги",
+      "price_resident_kzt": 15900,
+      "price_nonresident_kzt": 20100,
+      "price_extra_tiers": {
+        "СНГ": 17900
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 30
+    },
+    {
+      "name": "Транспортировка пациента (на автомобиле скорой помощи Lada Largus)",
+      "code": null,
+      "unit": "час",
+      "section": "Раздел 13. Транспортные услуги",
+      "price_resident_kzt": 11900,
+      "price_nonresident_kzt": 15100,
+      "price_extra_tiers": {
+        "СНГ": 13400
+      },
+      "currency_original": "KZT",
+      "note": null,
+      "page": 31
+    }
+  ]
+}

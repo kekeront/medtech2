@@ -18,16 +18,16 @@ from pathlib import Path
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from .config import ORIGINALS_DIR, PRICE_ANOMALY_PCT
+from .config import OCR_MIN_ROWS, ORIGINALS_DIR, PRICE_ANOMALY_PCT
 from .models import Partner, PriceDocument, PriceItem
-from .normalize import ServiceMatcher, _key
+from .normalize import ServiceMatcher, _key, clean_section
 from .parsers import parse_file
 from .parsers.detect import (
     detect_format,
     effective_date_from_filename,
     partner_from_filename,
 )
-from .tariffs import map_tariffs, to_kzt
+from .tariffs import current_rates, map_tariffs, to_kzt
 from .validation import (
     IMPLAUSIBLE_PRICE,
     is_droppable_name,
@@ -90,9 +90,12 @@ def ingest_file(
     *,
     original_name: str | None = None,
     force: bool = False,
+    force_ocr: bool = False,
 ) -> IngestReport:
     path = Path(path)
-    file_name = original_name or path.name
+    # Strip any directory components from the user-supplied name so it can
+    # never escape ORIGINALS_DIR when used to build an on-disk path.
+    file_name = Path(original_name or path.name).name or "upload"
     report = IngestReport(file_name=file_name)
 
     fmt = detect_format(path)
@@ -119,7 +122,43 @@ def ingest_file(
     report.partner = partner.name
     eff_date = effective_date_from_filename(file_name)
 
-    parsed = parse_file(path, file_format=fmt)
+    try:
+        parsed = parse_file(path, file_format=fmt, ocr=force_ocr)
+    except Exception as e:  # noqa: BLE001
+        # OCR engine missing/failed on a scan -> degrade to the text layer rather than
+        # losing the whole document (TZ 5: исходные данные не теряются).
+        if fmt in ("pdf", "scan_pdf"):
+            report.warnings.append(
+                f"OCR unavailable ({type(e).__name__}: {e}); used text layer"
+            )
+            parsed = parse_file(path, file_format="pdf", ocr=False)
+            fmt = report.file_format = "pdf"
+        else:
+            raise
+
+    # OCR fallback (TZ 4.2): a *text* PDF whose embedded layer yields almost nothing is an
+    # image scan misclassified as 'pdf' — re-run via OCR and keep the richer extraction.
+    if not force_ocr and fmt == "pdf" and parsed.n_rows < OCR_MIN_ROWS:
+        from .ocr import ocr_engine_available
+
+        if ocr_engine_available()[0]:
+            try:
+                ocr_parsed = parse_file(path, file_format="scan_pdf", ocr=True)
+                if ocr_parsed.n_rows > parsed.n_rows:
+                    parsed = ocr_parsed
+                    fmt = report.file_format = "scan_pdf"
+                    report.warnings.append("empty text layer — fell back to OCR")
+            except Exception as e:  # noqa: BLE001
+                report.warnings.append(
+                    f"OCR fallback failed ({type(e).__name__}); kept text result"
+                )
+    # One-pass LLM data-quality cleanup before DB write: cleans text in place and flags
+    # suspicious rows for the Проверка page. Fail-open — never blocks ingest (see clean_llm).
+    from .clean_llm import clean_rows
+
+    parsed.rows, clean_warnings = clean_rows(parsed.rows)
+    report.warnings.extend(clean_warnings)
+
     report.rows_parsed = parsed.n_rows
     report.warnings.extend(parsed.warnings)
 
@@ -139,6 +178,10 @@ def ingest_file(
     matcher = ServiceMatcher(session)
     latest = _load_active_versions(session, partner.partner_id)
 
+    # Live NBK rates for this document's effective date, fetched once and reused per row
+    # (cached in app/fx.py; falls back to the static config table if NBK is unreachable).
+    rates = current_rates(eff_date)
+
     log_lines: list[str] = list(parsed.warnings)
     any_review = False
 
@@ -148,12 +191,26 @@ def ingest_file(
             log_lines.append(f"skipped row without service name: {row.raw[:80]!r}")
             continue
 
-        res_raw, non_raw = map_tariffs(row.prices, parsed.price_labels)
+        if row.tariffs_resolved:
+            res_raw, non_raw, extra_raw = (
+                row.resident,
+                row.nonresident,
+                row.extra_tiers or {},
+            )
+        else:
+            res_raw, non_raw, extra_raw = map_tariffs(row.prices, parsed.price_labels)
         # Clear OCR-garbage prices to NULL so a single bad cell can't overflow the
         # numeric column / abort the document; the row stays, flagged for review.
         extra: list[str] = []
-        resident = _sane(to_kzt(res_raw, row.currency), extra, "resident")
-        nonresident = _sane(to_kzt(non_raw, row.currency), extra, "nonresident")
+        resident = _sane(to_kzt(res_raw, row.currency, rates), extra, "resident")
+        nonresident = _sane(to_kzt(non_raw, row.currency, rates), extra, "nonresident")
+        # Convert every extra foreign tier to KZT too, so 3+-tier lists stay lossless.
+        extra_tiers = {
+            label: kzt
+            for label, v in extra_raw.items()
+            if (kzt := to_kzt(v, row.currency, rates)) is not None
+            and kzt <= IMPLAUSIBLE_PRICE
+        } or None
         price_original = (
             res_raw if (res_raw is None or res_raw <= IMPLAUSIBLE_PRICE) else None
         )
@@ -174,6 +231,9 @@ def ingest_file(
             anomaly_pct=PRICE_ANOMALY_PCT,
         )
         reasons += extra
+        # LLM-flagged suspicious rows (app/clean_llm.py) become review reasons so they land
+        # on the Проверка page; the 'LLM:' marker lets that page filter to just these.
+        reasons += [s for s in row.issues if s.startswith("LLM:")]
         match = matcher.match(row.name)
 
         item = PriceItem(
@@ -185,13 +245,14 @@ def ingest_file(
             service_id=match.service_id,
             price_resident_kzt=resident,
             price_nonresident_kzt=nonresident,
+            price_extra_tiers=extra_tiers,
             price_original=price_original,
             currency_original=row.currency,
             match_method=match.method,
             match_confidence=match.confidence,
             needs_review=bool(reasons),
             review_reason="; ".join(reasons) or None,
-            section=row.section,
+            section=clean_section(row.section),
             unit=row.unit,
             source_row=row.raw,
             effective_date=eff_date,

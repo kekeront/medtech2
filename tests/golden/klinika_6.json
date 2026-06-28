@@ -1,0 +1,409 @@
+{
+  "source_file": "Клиника 6 прайс 2026.xlsx",
+  "partner": "Клиника 6",
+  "extracted_by": "claude",
+  "sampled": true,
+  "note": "Single sheet 'приложение'. Three tariff columns: col6=residents/граждане РК (price_resident_kzt), col7=СНГ/ближнее зарубежье (price_nonresident_kzt), col8=дальнее зарубежье (omitted — not in schema). All prices KZT. Rows marked 'исключение услуги' have no prices and are expect_review=true. Some row numbers use non-standard notation (e.g. '2378-1'). 5166 rows, ~15 top-level sections.",
+  "rows": [
+    {
+      "name": "Ведение больного в стационаре 1 койко-день",
+      "code": "E01.000.001",
+      "unit": "койко-день",
+      "section": "1. СТАЦИОНАР",
+      "price_resident_kzt": 2210,
+      "price_nonresident_kzt": 2700,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Стоимость 1 койко-дня в реанимационном отделении",
+      "code": "E01.000.009",
+      "unit": "койко-день",
+      "section": "1. СТАЦИОНАР",
+      "price_resident_kzt": 54290,
+      "price_nonresident_kzt": 65100,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Стоимость 1 койко-дня палаты повышенной комфортности (с учетом питания)",
+      "code": "E01.000.022",
+      "unit": "койко-день",
+      "section": "1. СТАЦИОНАР",
+      "price_resident_kzt": 63000,
+      "price_nonresident_kzt": 75600,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Антирефлюксные операции",
+      "code": "E02.000.001",
+      "unit": "операция",
+      "section": "1.1 Блок хирургии",
+      "price_resident_kzt": 177560,
+      "price_nonresident_kzt": 213100,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Антротомия",
+      "code": "E02.000.003",
+      "unit": "операция",
+      "section": "1.1 Блок хирургии",
+      "price_resident_kzt": 210000,
+      "price_nonresident_kzt": 252000,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Лапароскопическая холецистэктомия",
+      "code": "E02.000.019",
+      "unit": "операция",
+      "section": "1.1 Блок хирургии",
+      "price_resident_kzt": 189000,
+      "price_nonresident_kzt": 226800,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Осмотр врача. Выездные услуги",
+      "code": "A02.001.000.4",
+      "unit": "услуга",
+      "section": "2. Выездные услуги",
+      "price_resident_kzt": 23630,
+      "price_nonresident_kzt": 28400,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Вызов врача на дом (в дневное время)",
+      "code": "A02.001.000.10",
+      "unit": "услуга",
+      "section": "2. Выездные услуги",
+      "price_resident_kzt": 18900,
+      "price_nonresident_kzt": 22700,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Вызов врача на дом (в ночное время и в праздничные дни)",
+      "code": "A02.001.000.11",
+      "unit": "услуга",
+      "section": "2. Выездные услуги",
+      "price_resident_kzt": 26250,
+      "price_nonresident_kzt": 31500,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Первичная консультация врача акушера-гинеколога супружеской пары, включая фолликулометрию (одно исследование) (д.м.н., к.м.н., высшая категория). ЭКО",
+      "code": "A02.004.000.7",
+      "unit": "услуга",
+      "section": "3. Отделение ЭКО",
+      "price_resident_kzt": 16000,
+      "price_nonresident_kzt": 19200,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "TESA-MESA. ЭКО",
+      "code": "D00.001.100",
+      "unit": "процедура",
+      "section": "3. Отделение ЭКО",
+      "price_resident_kzt": 68250,
+      "price_nonresident_kzt": 81900,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Назначение схемы стимуляции, УЗ мониторинг фолликулогенеза при стимуляции суперовуляции  ЭКО в пакете (с учетом стоимости медикаментов)",
+      "code": "D00.000.100.46",
+      "unit": "процедура",
+      "section": "3.1 ЭКО",
+      "price_resident_kzt": 698250,
+      "price_nonresident_kzt": 837900,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Забор ооцитов. ЭКО",
+      "code": "D62.112.109.1",
+      "unit": "процедура",
+      "section": "3.1 ЭКО",
+      "price_resident_kzt": 131250,
+      "price_nonresident_kzt": 157500,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Культивирование эмбрионов до 5-6 дня. ЭКО",
+      "code": "D69.923.115.3",
+      "unit": "процедура",
+      "section": "3.1 ЭКО",
+      "price_resident_kzt": 252000,
+      "price_nonresident_kzt": 302400,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "исключение услуги",
+      "code": "D69.090.129.2",
+      "unit": null,
+      "section": "3.3 Операции, манипуляции",
+      "price_resident_kzt": null,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "expect_review": true
+    },
+    {
+      "name": "Криоконсервация ооцитов (включая 6 мес. хранения). ЭКО",
+      "code": "D00.000.100.17",
+      "unit": "процедура",
+      "section": "3.3 Операции, манипуляции",
+      "price_resident_kzt": 105000,
+      "price_nonresident_kzt": 126000,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Перенос размороженных эмбрионов, включая индивидуальный подбор поддержки после программы ВРТ (УЗИ, консульт круглосуточно, без стоимости медикаментов). ЭКО",
+      "code": "E23.000.001",
+      "unit": "процедура",
+      "section": "3.3 Операции, манипуляции",
+      "price_resident_kzt": 94500,
+      "price_nonresident_kzt": 113400,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Анестезия местная",
+      "code": "D99.292.005.2",
+      "unit": "процедура",
+      "section": "5. Блок анестезии (наркозы)",
+      "price_resident_kzt": 2100,
+      "price_nonresident_kzt": 2500,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Постановка центрального венозного катетера под УЗИ",
+      "code": "D38.911.424.1",
+      "unit": "процедура",
+      "section": "5. Блок анестезии (наркозы)",
+      "price_resident_kzt": 27300,
+      "price_nonresident_kzt": 32800,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Масочный наркоз - севофлюран (севоран)",
+      "code": "D96.700.027.12",
+      "unit": "процедура",
+      "section": "5. Блок анестезии (наркозы)",
+      "price_resident_kzt": 47410,
+      "price_nonresident_kzt": 56900,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Первичная консультация врача-диетолога",
+      "code": "A02.073.000",
+      "unit": "услуга",
+      "section": "8.1 Консультации специалистов",
+      "price_resident_kzt": 13000,
+      "price_nonresident_kzt": 15600,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Первичный прием врача педиатра",
+      "code": "A02.002.000.18",
+      "unit": "услуга",
+      "section": "8.1 Консультации специалистов",
+      "price_resident_kzt": 13000,
+      "price_nonresident_kzt": 15600,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Внутривенная инъекция",
+      "code": "D01.000.000.43",
+      "unit": "процедура",
+      "section": "10. Процедуры, манипуляции",
+      "price_resident_kzt": 1890,
+      "price_nonresident_kzt": 2300,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Иссечение доброкачественных новообразований",
+      "code": "E09.000.003",
+      "unit": "операция",
+      "section": "10. Процедуры, манипуляции",
+      "price_resident_kzt": 21000,
+      "price_nonresident_kzt": 25200,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Взятие мазка из уретры",
+      "code": "D99.941.602.2",
+      "unit": "процедура",
+      "section": "11. Забор (взятие) материала на исследование",
+      "price_resident_kzt": 1260,
+      "price_nonresident_kzt": 1500,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Взятие крови на лабораторные исследования (однократно)",
+      "code": "D99.293.012",
+      "unit": "процедура",
+      "section": "11. Забор (взятие) материала на исследование",
+      "price_resident_kzt": 1050,
+      "price_nonresident_kzt": 1300,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Пункционная/аспирационная биопсия молочной железы под УЗ контролем",
+      "code": "D88.790.001.1",
+      "unit": "процедура",
+      "section": "12. Биопсия",
+      "price_resident_kzt": 10920,
+      "price_nonresident_kzt": 13100,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Радиофармпрепарат 18-фтордезоксиглюкоза (370 МБК на 1 пациента с весом 70 кг)",
+      "code": "E10.000.001",
+      "unit": "штука",
+      "section": "14.1 Дополнительные услуги лучевой диагностики",
+      "price_resident_kzt": 133400,
+      "price_nonresident_kzt": 160100,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "КТ без контрастирования одна анатомическая зона (МСКТ 40-срезов)",
+      "code": "C03.010.006",
+      "unit": "услуга",
+      "section": "14.2 Компьютерная томография (КТ)",
+      "price_resident_kzt": 16910,
+      "price_nonresident_kzt": 20300,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "КТ головного мозга (МСКТ 40-срезов)",
+      "code": "С03.001.006",
+      "unit": "услуга",
+      "section": "14.2 Компьютерная томография (КТ)",
+      "price_resident_kzt": 20370,
+      "price_nonresident_kzt": 24400,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "УЗДГ артерий интракраниального бассейна у детей",
+      "code": "C03.000.003.2",
+      "unit": "услуга",
+      "section": "14.7 УЗДГ",
+      "price_resident_kzt": 9980,
+      "price_nonresident_kzt": 12000,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "УЗДГ брахиоцефального ствола (артерий экстракраниального бассейна) взр.",
+      "code": "C03.002.003.2",
+      "unit": "услуга",
+      "section": "14.7 УЗДГ",
+      "price_resident_kzt": 12600,
+      "price_nonresident_kzt": 15100,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "УЗИ головного мозга",
+      "code": "C03.004.003.1",
+      "unit": "услуга",
+      "section": "14.8 УЗИ, ЭХО, соноэластография",
+      "price_resident_kzt": 5250,
+      "price_nonresident_kzt": 6300,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Измерение скорости оседания эритроцитов (СОЭ)",
+      "code": "B02.061.002.1",
+      "unit": "услуга",
+      "section": "15.1 Гематологические исследования",
+      "price_resident_kzt": 1050,
+      "price_nonresident_kzt": 1300,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Общий анализ крови на анализаторе с дифференцировкой 5 классов клеток",
+      "code": "B02.110.002",
+      "unit": "услуга",
+      "section": "15.1 Гематологические исследования",
+      "price_resident_kzt": 1580,
+      "price_nonresident_kzt": 1900,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "исключение услуги",
+      "code": "B04.063.002",
+      "unit": null,
+      "section": "15.1 Гематологические исследования",
+      "price_resident_kzt": null,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "expect_review": true
+    },
+    {
+      "name": "Агрегация тромбоцитов с АДФ",
+      "code": "B04.063.002.1",
+      "unit": "услуга",
+      "section": "15.1 Гематологические исследования",
+      "price_resident_kzt": 15500,
+      "price_nonresident_kzt": 18600,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Анализ мочи на суточную протеинурию",
+      "code": "B01.479.001.1",
+      "unit": "услуга",
+      "section": "15.2 Общеклинические исследования",
+      "price_resident_kzt": 1470,
+      "price_nonresident_kzt": 1800,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Исследование кала (копрограмма+яйца гельминтов)",
+      "code": "B01.073.001",
+      "unit": "услуга",
+      "section": "15.2 Общеклинические исследования",
+      "price_resident_kzt": 5250,
+      "price_nonresident_kzt": 6300,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Исследование семенной жидкости общеклиническое (спермограмма)",
+      "code": "B01.082.002",
+      "unit": "услуга",
+      "section": "15.2 Общеклинические исследования",
+      "price_resident_kzt": 8090,
+      "price_nonresident_kzt": 9700,
+      "currency_original": "KZT",
+      "expect_review": false
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "source_file": "Клиника 7_Прайс 2026.xls",
+  "partner": "Клиника 7",
+  "extracted_by": "claude",
+  "sampled": true,
+  "note": "3 price columns: col3=граждане РК/кандасы/постоянно проживающие (resident → price_resident_kzt), col4=СНГ/ближнее зарубежье (middle tier, not mapped in schema), col5=дальнее зарубежье (non-resident → price_nonresident_kzt); all prices in KZT с НДС; sequential row number in col0 is an ordinal, not a service code (code=null throughout); 7 rows in section ВЕДЕНИЕ БЕРЕМЕННОСТИ have 'от X' minimum-price notation and no non-resident columns (expect_review=true); row 690 has no price at all (expect_review=true)",
+  "rows": [
+    {
+      "name": "Первичный консультативный прием врача",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ПРИЕМ ВРАЧА",
+      "price_resident_kzt": 12600,
+      "price_nonresident_kzt": 21420,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Первичный консультативный прием врача д.м.н.",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ПРИЕМ ВРАЧА",
+      "price_resident_kzt": 24150,
+      "price_nonresident_kzt": 41055,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Первичный консультативный прием главного специалиста",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ПРИЕМ ВРАЧА",
+      "price_resident_kzt": 50000,
+      "price_nonresident_kzt": 85000,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Заключение врача по чекап-программе",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ПРИЕМ ВРАЧА",
+      "price_resident_kzt": 7350,
+      "price_nonresident_kzt": 12495,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Первичный консультативный прием врача (онлайн)",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ОНЛАЙН КОНСУЛЬТАЦИИ",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 17850,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Телемедицина (консультация 2 специалистов)",
+      "code": null,
+      "unit": "1 консультация",
+      "section": "ТЕЛЕМЕДИЦИНА",
+      "price_resident_kzt": 13650,
+      "price_nonresident_kzt": 23205,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Медицинский осмотр водителей с выдачей справки о медицинском заключении (форма №073Ф) ЖЕН",
+      "code": null,
+      "unit": "1 услуга",
+      "section": "МЕДИЦИНСКИЙ ОСМОТР",
+      "price_resident_kzt": 20800,
+      "price_nonresident_kzt": 35360,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Медицинский осмотр на посещение бассейна с выдачей справки (дерматолог, терапевт, кровь на микрореакцию, кал на я/г)",
+      "code": null,
+      "unit": "1 услуга",
+      "section": "МЕДИЦИНСКИЙ ОСМОТР",
+      "price_resident_kzt": 7200,
+      "price_nonresident_kzt": 12240,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "В/венная инъекция без лекарственных средств",
+      "code": null,
+      "unit": "1 инъекция",
+      "section": "ПРОЦЕДУРНЫЙ КАБИНЕТ",
+      "price_resident_kzt": 2100,
+      "price_nonresident_kzt": 3570,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Вакцинация \"ПРЕВЕНАР 13\"",
+      "code": null,
+      "unit": "1 инъекция",
+      "section": "ПРОЦЕДУРНЫЙ КАБИНЕТ",
+      "price_resident_kzt": 25200,
+      "price_nonresident_kzt": 42840,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Разовое посещение дневного стационара (без оформления истории болезни, без питания и без медикаментов)",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ДНЕВНОЙ СТАЦИОНАР",
+      "price_resident_kzt": 3150,
+      "price_nonresident_kzt": 5355,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "КДЛ - Аллергены бытовые/молекулярные (А)",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "КДЛ - Аллергены бытовые/молекулярные (А)",
+      "price_resident_kzt": 4200,
+      "price_nonresident_kzt": 7140,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Альбумин",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Биохимические исследования крови. Обмен белков",
+      "price_resident_kzt": 1500,
+      "price_nonresident_kzt": 2550,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Белок Бенс-Джонса в моче",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Биохимические исследования крови. Обмен белков",
+      "price_resident_kzt": 35950,
+      "price_nonresident_kzt": 61115,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Активированное частичное/порционное тромбопластиновое время (АЧТВ/АПТВ)",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Исследование системы гемостаза",
+      "price_resident_kzt": 1600,
+      "price_nonresident_kzt": 2720,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Д-Димер (D-Dimer Exclusion), количественное определение",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Исследование системы гемостаза",
+      "price_resident_kzt": 8650,
+      "price_nonresident_kzt": 14705,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Общий анализ крови (ОАК) развернутый (с лейкоцитарной формулой)",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Гематологические исследования",
+      "price_resident_kzt": 2350,
+      "price_nonresident_kzt": 3995,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Простатспецифический антиген общий (ПСА общий, PSA total )",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Опухолевые маркеры",
+      "price_resident_kzt": 3150,
+      "price_nonresident_kzt": 5355,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Раковоэмбриональный антиген (РЭА, СЕА)",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Опухолевые маркеры",
+      "price_resident_kzt": 3900,
+      "price_nonresident_kzt": 6630,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Выполнение исследования в ускоренном режиме (по Cito)",
+      "code": null,
+      "unit": "1 услуга",
+      "section": "Исследования, выполняемые в экспресс-режиме (по Cito)",
+      "price_resident_kzt": null,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "expect_review": true
+    },
+    {
+      "name": "Аппаратная реинфузия крови на аппарате CATS FRESENIUS",
+      "code": null,
+      "unit": "1 процедура",
+      "section": "ТРАНСФУЗИОЛОГИЯ",
+      "price_resident_kzt": 146300,
+      "price_nonresident_kzt": 248710,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Определение группы крови, резус-фактора",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "ТРАНСФУЗИОЛОГИЯ",
+      "price_resident_kzt": 4850,
+      "price_nonresident_kzt": 8245,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "УЗИ органов брюшной полости (печень+желчный пузырь+поджелудочная железа+селезенка)",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "УЗИ ДИАГНОСТИКА",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 17850,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "УЗИ органов мошонки",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "УЗИ ДИАГНОСТИКА",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 17850,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "3Д пазух носа",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "РЕНТГЕНДИАГНОСТИКА",
+      "price_resident_kzt": 18900,
+      "price_nonresident_kzt": 32130,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "R- графия локтевого сустава 2 проекции",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "РЕНТГЕНДИАГНОСТИКА",
+      "price_resident_kzt": 5800,
+      "price_nonresident_kzt": 9860,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Виртуальная КТ- колоноскопия без контраста",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Брюшной отдел",
+      "price_resident_kzt": 57750,
+      "price_nonresident_kzt": 98175,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "КТ аортография брюшного сегмента с контрастом",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "Брюшной отдел",
+      "price_resident_kzt": 67750,
+      "price_nonresident_kzt": 115175,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "МРТ грудного отдела позвоночника с контрастом  15    мл",
+      "code": null,
+      "unit": "1 исследование",
+      "section": "- МРТ аппарата 1,5 Тл - Позвоночник",
+      "price_resident_kzt": 81900,
+      "price_nonresident_kzt": 139230,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Грязевые аппликации мёртвого моря",
+      "code": null,
+      "unit": "1 процедура",
+      "section": "УСЛУГИ ВОДОТЕПЛОЛЕЧЕНИЯ",
+      "price_resident_kzt": 12600,
+      "price_nonresident_kzt": 21420,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Амплипульс",
+      "code": null,
+      "unit": "1 процедура",
+      "section": "УСЛУГИ ФИЗИОТЕРАПИИ",
+      "price_resident_kzt": 2550,
+      "price_nonresident_kzt": 4335,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "I триместр (8 – 20 недель беременности)",
+      "code": null,
+      "unit": "1 программа",
+      "section": "ВЕДЕНИЕ БЕРЕМЕННОСТИ",
+      "price_resident_kzt": null,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "expect_review": true
+    },
+    {
+      "name": "Послеродовое посещение",
+      "code": null,
+      "unit": "1 посещение",
+      "section": "ВЕДЕНИЕ БЕРЕМЕННОСТИ",
+      "price_resident_kzt": null,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "expect_review": true
+    },
+    {
+      "name": "Висцеральная терапия (вправление внутренних органов)",
+      "code": null,
+      "unit": "1 сеанс",
+      "section": "ЦЕНТР ВОСТОЧНОЙ МЕДИЦИНЫ",
+      "price_resident_kzt": 11350,
+      "price_nonresident_kzt": 19295,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Лапароскопическая холецистэктомия (плановое) (не осложненное)",
+      "code": null,
+      "unit": "1 операция",
+      "section": "- Операции - Общая хирургия",
+      "price_resident_kzt": 262500,
+      "price_nonresident_kzt": 446250,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Лапароскопическая холецистэктомия.(экстреное) (не осложненое)",
+      "code": null,
+      "unit": "1 операция",
+      "section": "- Операции - Общая хирургия",
+      "price_resident_kzt": 367500,
+      "price_nonresident_kzt": 624750,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Внутрикоронковое отбеливание",
+      "code": null,
+      "unit": "1 услуга",
+      "section": "СТОМАТОЛОГИЯ",
+      "price_resident_kzt": 10500,
+      "price_nonresident_kzt": 17850,
+      "currency_original": "KZT",
+      "expect_review": false
+    },
+    {
+      "name": "Имплант винтового производства Корея",
+      "code": null,
+      "unit": "1 услуга",
+      "section": "СТОМАТОЛОГИЯ",
+      "price_resident_kzt": 147000,
+      "price_nonresident_kzt": 249900,
+      "currency_original": "KZT",
+      "expect_review": false
+    }
+  ]
+}

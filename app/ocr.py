@@ -268,6 +268,7 @@ def ocr_pdf(
     dpi: int = 300,
     max_pages: int | None = None,
     structured: bool = False,
+    max_seconds: float | None = None,
 ) -> dict[str, Any]:
     """Run OCR on every page of a PDF.
 
@@ -288,13 +289,23 @@ def ocr_pdf(
     path = Path(path)
     t_start = time.perf_counter()
     doc = fitz.open(str(path))
-    limit = min(len(doc), max_pages) if max_pages else len(doc)
+    total_pages = len(doc)
+    limit = min(total_pages, max_pages) if max_pages else total_pages
 
     pages_out: list[dict[str, Any]] = []
     text_parts: list[str] = []
     all_structured: list[dict[str, Any]] = []
+    truncated = False
 
     for page_no in range(limit):
+        # Wall-clock budget (TZ 5: ≤3 min/doc) — stop and return partial results.
+        if (
+            max_seconds
+            and page_no > 0
+            and (time.perf_counter() - t_start) > max_seconds
+        ):
+            truncated = True
+            break
         img = _render_page(doc[page_no], dpi)
         items = _run_engine(engine, engine_name, img)
 
@@ -313,6 +324,8 @@ def ocr_pdf(
     out: dict[str, Any] = {
         "engine": engine_name,
         "pages": pages_out,
+        "pages_total": total_pages,
+        "truncated": truncated,
         "full_text": full_text,
         "char_count": len(full_text),
         "elapsed_sec": round(time.perf_counter() - t_start, 3),

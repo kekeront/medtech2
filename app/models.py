@@ -118,6 +118,9 @@ class PriceItem(Base):
 
     price_resident_kzt: Mapped[float | None] = mapped_column(Numeric(14, 2))
     price_nonresident_kzt: Mapped[float | None] = mapped_column(Numeric(14, 2))
+    # Any priced tier beyond resident/nonresident (e.g. дальнее зарубежье, страховая,
+    # партнёрская скидка) — {label: kzt_value}. Keeps 3+-tier price lists lossless.
+    price_extra_tiers: Mapped[dict | None] = mapped_column(JSONB)
     price_original: Mapped[float | None] = mapped_column(Numeric(14, 2))
     currency_original: Mapped[str] = mapped_column(
         String(8), default="KZT", nullable=False

@@ -7,12 +7,16 @@ embedded text layer.
 
 from __future__ import annotations
 
+import logging
 import tempfile
 from pathlib import Path
 
 from fastapi import APIRouter, File, HTTPException, Query, UploadFile
 
 from .ocr import ocr_engine_available, ocr_image, ocr_pdf
+from .ocr_correction import correct_ocr_text
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/ocr", tags=["ocr"])
 
@@ -40,11 +44,28 @@ async def ocr_upload(
             "Only meaningful for price-list layouts."
         ),
     ),
+    correct: bool = Query(
+        False,
+        description=(
+            "Post-process OCR text to fix recognition errors using an LLM or spell-checker. "
+            "Adds 'corrected_text' and 'correction' keys to the response."
+        ),
+    ),
+    correct_method: str = Query(
+        "llm",
+        description=(
+            "Correction backend: 'llm' (Groq llama-3.3-70b-versatile, requires GROQ_API_KEY) "
+            "or 'speller' (Yandex Speller, free, no key needed)."
+        ),
+    ),
 ) -> dict:
     """OCR a scanned PDF or image file.
 
     Returns extracted text per page plus optional structured price-row extraction.
-    Supported types: pdf, png, jpg, jpeg, tiff.
+    When ``correct=true``, the full OCR text is additionally post-processed to fix
+    Cyrillic recognition errors — see ``correct_method`` for backend options.
+
+    Supported file types: pdf, png, jpg, jpeg, tiff.
     """
     available, engine_info = ocr_engine_available()
     if not available:
@@ -56,6 +77,12 @@ async def ocr_upload(
         raise HTTPException(
             415,
             f"unsupported file type: {suffix!r}. Supported: {sorted(_SUPPORTED_SUFFIXES)}",
+        )
+
+    if correct and correct_method not in {"llm", "speller"}:
+        raise HTTPException(
+            422,
+            f"unknown correct_method {correct_method!r}. Use 'llm' or 'speller'.",
         )
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
@@ -73,5 +100,26 @@ async def ocr_upload(
         raise HTTPException(422, f"OCR failed: {type(exc).__name__}: {exc}") from exc
     finally:
         Path(tmp_path).unlink(missing_ok=True)
+
+    if correct:
+        try:
+            correction = correct_ocr_text(result["full_text"], method=correct_method)
+            result["corrected_text"] = correction["corrected_text"]
+            result["correction"] = {
+                "method": correction["method"],
+                "elapsed_sec": correction["elapsed_sec"],
+                **(
+                    {"warning": correction["warning"]}
+                    if "warning" in correction
+                    else {}
+                ),
+            }
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("OCR correction failed (%s): %s", type(exc).__name__, exc)
+            result["corrected_text"] = None
+            result["correction"] = {
+                "method": correct_method,
+                "error": f"{type(exc).__name__}: {exc}",
+            }
 
     return result

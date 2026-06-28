@@ -19,6 +19,13 @@ class PriceRow:
     raw: str = ""
     # Per-row parse warnings (e.g. "price repaired from OCR", "no price found").
     issues: list[str] = field(default_factory=list)
+    # Pre-resolved tariffs: set by parsers that already understand the columns (e.g. the
+    # LLM extractor), so the pipeline skips positional map_tariffs guessing. resident /
+    # nonresident in `currency`; extra_tiers maps any further tier label -> value.
+    tariffs_resolved: bool = False
+    resident: float | None = None
+    nonresident: float | None = None
+    extra_tiers: dict[str, float] | None = None
 
 
 @dataclass

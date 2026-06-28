@@ -1,23 +1,31 @@
 [project]
 name = "medarchive"
 version = "0.1.0"
-description = "Add your description here"
+description = "Парсер прайс-листов клиник-партнёров: PDF/DOCX/XLS/XLSX → Postgres → REST API"
 requires-python = ">=3.10"
 dependencies = [
+    "defusedxml>=0.7.1",
     "easyocr>=1.7.2",
     "fastapi>=0.138.1",
+    "google-genai>=2.10.0",
+    "groq>=1.5.0",
     "httpx>=0.28.1",
     "onnxruntime>=1.7.0,<1.24",
     "openpyxl>=3.1.5",
     "pandas>=2.3.3",
     "psycopg2-binary>=2.9.12",
     "pymupdf>=1.27.2.3",
+    "pytesseract>=0.3.13",
     "python-dateutil>=2.9.0.post0",
     "python-docx>=1.2.0",
+    "python-dotenv>=1.2.2",
     "python-multipart>=0.0.32",
     "rapidfuzz>=3.14.5",
     "rapidocr-onnxruntime==1.2.13",
+    "requests>=2.34.2",
     "sqlalchemy>=2.0.51",
+    "surya-ocr>=0.17.1",
+    "transformers<5",
     "uvicorn[standard]>=0.49.0",
     "xlrd>=2.0.2",
 ]

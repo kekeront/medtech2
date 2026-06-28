@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Загрузка прайсов — тест парсинга (ZIP)</title>
+<style>
+  :root{--mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  body{font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;color:#1f2328;margin:0;background:#f6f8fa}
+  .wrap{max-width:1080px;margin:0 auto;padding:30px 24px 64px}
+  h1{font-size:21px;margin:0 0 4px}
+  .sub{color:#57606a;margin:0 0 20px;font-size:13px}
+  .sub code{font-family:var(--mono);background:#eaeef2;padding:1px 6px;border-radius:5px}
+  .card{background:#fff;border:1px solid #d0d7de;border-radius:12px;padding:18px;margin-bottom:18px}
+  .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  label.fld{font-size:12px;color:#57606a;display:flex;flex-direction:column;gap:4px}
+  input[type=text]{font:13px var(--mono);padding:7px 10px;border:1px solid #d0d7de;border-radius:8px;min-width:280px}
+  .chk{display:flex;align-items:center;gap:6px;font-size:13px;color:#24292f;cursor:pointer}
+  .drop{margin-top:14px;border:2px dashed #afb8c1;border-radius:12px;padding:30px;text-align:center;
+        color:#57606a;cursor:pointer;transition:.12s;background:#fbfcfd}
+  .drop.over{border-color:#0969da;background:#ddf4ff55}
+  .drop b{color:#24292f}
+  .file{margin-top:10px;font:13px var(--mono);color:#1f2328}
+  button{font:14px/1 inherit;font-weight:600;color:#fff;background:#1f883d;border:0;border-radius:8px;
+         padding:11px 20px;cursor:pointer;margin-top:14px}
+  button:disabled{background:#94d3a2;cursor:default}
+  .status{margin:14px 0 0;font-size:13px;color:#57606a;min-height:20px}
+  .spin{display:inline-block;width:13px;height:13px;border:2px solid #afb8c1;border-top-color:#0969da;
+        border-radius:50%;animation:s .7s linear infinite;vertical-align:-2px;margin-right:7px}
+  @keyframes s{to{transform:rotate(360deg)}}
+  .cards{display:flex;gap:11px;flex-wrap:wrap;margin:0 0 16px}
+  .stat{flex:1;min-width:108px;border:1px solid;border-radius:10px;padding:12px 15px}
+  .stat .v{font-size:24px;font-weight:700;line-height:1}.stat .l{font-size:12px;color:#57606a;margin-top:4px}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d0d7de;border-radius:10px;overflow:hidden}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#57606a;
+     background:#f6f8fa;padding:9px 11px;border-bottom:1px solid #d0d7de}
+  td{padding:8px 11px;border-bottom:1px solid #eaeef2;vertical-align:top;font-size:13px}
+  tr:last-child td{border-bottom:none}
+  .num{font-variant-numeric:tabular-nums;text-align:right;font-family:var(--mono);font-size:12.5px}
+  .fmt{font-family:var(--mono);font-size:12px;color:#57606a}
+  .badge{font-size:11.5px;font-weight:600;white-space:nowrap;padding:2px 8px;border-radius:20px}
+  .warn{font-size:11.5px;color:#9a6700;margin-top:3px}
+  .err{font-size:11.5px;color:#cf222e;margin-top:3px;font-family:var(--mono)}
+  details{margin-top:16px}summary{cursor:pointer;color:#57606a;font-size:13px}
+  pre{background:#0d1117;color:#c9d1d9;font:12px/1.5 var(--mono);padding:14px;border-radius:10px;overflow:auto;max-height:360px}
+  .hint{font-size:12px;color:#8c959f;margin-top:6px}
+</style>
+</head>
+<body><div class="wrap">
+  <h1>Загрузка прайсов — тест парсинга</h1>
+  <p class="sub">Upload a <code>.zip</code> bundle (or a single <code>.pdf/.docx/.doc/.xlsx/.xls</code>) to
+    <code>POST /upload</code>. The server unzips it, routes each document to its parser
+    (office → spreadsheet/word; PDF → OCR or text), ingests it, and returns a per-file report.</p>
+
+  <div class="card">
+    <div class="row">
+      <label class="fld">API base URL
+        <input id="base" type="text" placeholder="(same origin)" value="">
+      </label>
+      <label class="chk"><input type="checkbox" id="force"> <span><b>force</b> — re-ingest duplicates</span></label>
+      <label class="chk"><input type="checkbox" id="ocr"> <span><b>ocr</b> — force OCR on every PDF</span></label>
+    </div>
+    <div class="hint">Leave base URL empty when this page is opened via the API (e.g. <code>http://localhost:8000/ui/upload-test.html</code>). Set it to <code>http://localhost:8000</code> only if you opened the file directly.</div>
+
+    <div id="drop" class="drop">
+      <b>Drop a file here</b> or click to choose<br>
+      <span style="font-size:12px">.zip · .pdf · .docx · .doc · .xlsx · .xls</span>
+      <input id="file" type="file" accept=".zip,.pdf,.docx,.doc,.xlsx,.xls" hidden>
+      <div id="fname" class="file"></div>
+    </div>
+    <button id="run" disabled>Run parse</button>
+    <div id="status" class="status"></div>
+  </div>
+
+  <div id="result"></div>
+  <details id="rawbox" style="display:none">
+    <summary>Raw JSON response</summary>
+    <pre id="raw"></pre>
+  </details>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const drop=$('#drop'), fileIn=$('#file'), fname=$('#fname'), runBtn=$('#run'),
+      statusEl=$('#status'), result=$('#result'), rawBox=$('#rawbox'), raw=$('#raw');
+let chosen=null;
+
+function pick(f){ chosen=f; fname.textContent = f ? `📦 ${f.name}  (${(f.size/1024).toFixed(0)} KB)` : '';
+                 runBtn.disabled = !f; }
+drop.onclick = ()=>fileIn.click();
+fileIn.onchange = e => pick(e.target.files[0]);
+['dragover','dragenter'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('over');}));
+['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('over');}));
+drop.addEventListener('drop',e=>{ if(e.dataTransfer.files[0]) pick(e.dataTransfer.files[0]); });
+
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtN = n => (n==null?'—':Number(n).toLocaleString('ru-RU'));
+
+function badge(r){
+  let bg,fg,txt;
+  if(r.status==='error'){bg='#ffebe9';fg='#cf222e';txt='✗ error';}
+  else if(r.skipped_duplicate){bg='#eaeef2';fg='#57606a';txt='• duplicate';}
+  else if((r.rows_needs_review||0)>0){bg='#fff8c5';fg='#9a6700';txt='⚠ '+r.status;}
+  else if((r.rows_written||0)>0){bg='#dafbe1';fg='#1a7f37';txt='✓ '+r.status;}
+  else {bg='#f0f1f3';fg='#6e7781';txt=r.status||'—';}
+  return `<span class="badge" style="background:${bg};color:${fg}">${esc(txt)}</span>`;
+}
+
+function reportRow(r){
+  const warns=(r.warnings||[]);
+  const wHtml = warns.length ? warns.map(w=>{
+    const cls = /error|fail|unavailable/i.test(w)?'err':'warn';
+    return `<div class="${cls}">${esc(w)}</div>`;}).join('') : '';
+  return `<tr>
+    <td><b>${esc(r.file_name)}</b>${wHtml}</td>
+    <td class="fmt">${esc(r.file_format||'—')}</td>
+    <td>${badge(r)}</td>
+    <td class="num">${fmtN(r.rows_parsed)}</td>
+    <td class="num">${fmtN(r.rows_written)}</td>
+    <td class="num">${fmtN(r.rows_needs_review)}</td>
+    <td class="num">${fmtN(r.rows_matched)}</td>
+    <td>${esc(r.partner||'—')}</td></tr>`;
+}
+
+function render(v){
+  rawBox.style.display='block'; raw.textContent = JSON.stringify(v,null,2);
+  const reports = v.reports || [];
+  const total=v.total||0, done=v.done||0, pct = total? Math.round(done/total*100) : (v.status==='done'?100:0);
+  const running = v.status==='running' || v.status==='queued';
+  const barColor = v.status==='error'?'#cf222e':(v.status==='done'?'#1a7f37':'#0969da');
+  const label = running
+     ? `Обработка ${done}/${total||'?'}${v.current?` — <b style="color:#24292f">${esc(v.current)}</b>`:''}`
+     : `Статус: <b>${esc(v.status)}</b>`;
+  const bar = `<div style="margin:0 0 16px">
+    <div style="display:flex;justify-content:space-between;font-size:13px;color:#57606a;margin-bottom:6px">
+      <span>${label}</span><span>${pct}% · ${v.elapsed_sec||0}s</span></div>
+    <div style="height:9px;background:#eaeef2;border-radius:5px;overflow:hidden">
+      <div style="height:100%;width:${pct}%;background:${barColor};transition:width .3s"></div></div></div>`;
+  const C=[['Файлов',`${done}/${total||'?'}`,'#24292f','#eaeef2'],
+           ['Ошибок',v.errors,'#cf222e','#ffebe9'],
+           ['Строк записано',v.rows_written,'#0969da','#ddf4ff'],
+           ['На проверку',v.rows_needs_review,'#9a6700','#fff8c5']];
+  const cards = `<div class="cards">`+C.map(([l,val,fg,bg])=>
+    `<div class="stat" style="background:${bg};border-color:${fg}33"><div class="v" style="color:${fg}">${typeof val==='number'?fmtN(val):val}</div><div class="l">${l}</div></div>`).join('')+`</div>`;
+  const errBox = v.error?`<div class="err" style="margin:0 0 12px">${esc(v.error)}</div>`:'';
+  const head = `<thead><tr><th>Файл</th><th>Формат</th><th>Статус</th><th class="num">parsed</th>
+    <th class="num">written</th><th class="num">review</th><th class="num">matched</th><th>Партнёр</th></tr></thead>`;
+  const table = reports.length? `<table>${head}<tbody>${reports.map(reportRow).join('')}</tbody></table>` : '';
+  result.innerHTML = `<div class="sub" style="margin:0 0 10px">Архив: <code>${esc(v.archive)}</code> · job <code>${esc(v.job_id)}</code></div>`
+    + bar + errBox + cards + table;
+}
+
+function renderError(code, msg){
+  rawBox.style.display='none';
+  result.innerHTML = `<div class="card" style="border-color:#cf222e55">
+    <b style="color:#cf222e">Ошибка (${esc(code)})</b>
+    <pre style="margin-top:10px;background:#fff5f5;color:#86181d">${esc(msg)}</pre></div>`;
+}
+
+let polling=false;
+async function poll(jobId, base){
+  try{
+    const r = await fetch(`${base}/jobs/${jobId}`);
+    if(!r.ok){ renderError(r.status, await r.text()); polling=false; runBtn.disabled=false; return; }
+    const v = await r.json();
+    render(v);
+    if(v.status==='done' || v.status==='error'){
+      polling=false; runBtn.disabled=false;
+      statusEl.textContent = (v.status==='done'?'Готово за ':'Ошибка за ')+`${v.elapsed_sec}s`;
+    }else{
+      statusEl.innerHTML = `<span class="spin"></span>Обработка… ${v.done}/${v.total||'?'} (${v.elapsed_sec||0}s)`;
+      setTimeout(()=>poll(jobId, base), 1200);
+    }
+  }catch(e){ renderError('network', e.message); polling=false; runBtn.disabled=false; }
+}
+
+runBtn.onclick = async ()=>{
+  if(!chosen || polling) return;
+  const base = ($('#base').value||'').trim().replace(/\/+$/,'');
+  const qs = new URLSearchParams({force:$('#force').checked, ocr:$('#ocr').checked});
+  const fd = new FormData(); fd.append('file', chosen);
+  runBtn.disabled=true; polling=true; result.innerHTML=''; rawBox.style.display='none';
+  statusEl.innerHTML = `<span class="spin"></span>Загрузка ${(chosen.size/1024/1024).toFixed(1)} МБ…`;
+  try{
+    const r = await fetch(`${base}/upload?${qs}`, {method:'POST', body:fd});
+    const text = await r.text();
+    let data=null; try{ data=JSON.parse(text); }catch{}
+    if(!r.ok){ renderError(r.status, (data&&data.detail)||text||r.statusText); polling=false; runBtn.disabled=false; return; }
+    statusEl.innerHTML = `<span class="spin"></span>Принято, парсинг в фоне…`;
+    poll(data.job_id, base);   // returns immediately; progress is polled
+  }catch(e){
+    renderError('network', e.message + ' — is the API running and the base URL correct?');
+    polling=false; runBtn.disabled=false;
+  }
+};
+</script>
+</body></html>

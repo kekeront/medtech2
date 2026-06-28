@@ -1,0 +1,236 @@
+{
+  "source_file": "Клиника 9 скан 2025.pdf",
+  "partner": "Клиника 5",
+  "extracted_by": "claude",
+  "sampled": false,
+  "note": "Scanned copy of Клиника 5 (matches the Клиника 5 digital golden: терапевт 9000, гомеопат 15000, Холтер ЭКГ 10000, спирография+бронхолитик 6500). NOT a separate clinic.",
+  "rows": [
+    {
+      "name": "терапевт",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 7000,
+      "currency_original": "KZT",
+      "note": "Столбцы: перв. приём→resident, повт. приём→nonresident (первичный/повторный приём; тарифов резидент/иностранец в прайсе нет)"
+    },
+    {
+      "name": "Консультация гомеопата",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 15000,
+      "price_nonresident_kzt": 15000,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "аллерголог-дерматолог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 7000,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "аллерголог-иммунолог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 7000,
+      "currency_original": "KZT",
+      "note": "детский, взрослый"
+    },
+    {
+      "name": "взятие мазка из носа на эозинофилы",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 500,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "риноцитограмма"
+    },
+    {
+      "name": "мазок",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 1500,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "РИФ",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 6300,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "3 инфекции: хламидиоз, уреоплазмоз, микоплазмоз"
+    },
+    {
+      "name": "ПЦР",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 20000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "10 инфекций"
+    },
+    {
+      "name": "RW",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 2800,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "микрореакция",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 1000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "венеролог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 5500,
+      "price_nonresident_kzt": 3500,
+      "currency_original": "KZT",
+      "note": "интерпретация результатов обследования и назначение лечения (рецепт)"
+    },
+    {
+      "name": "ВИЧ",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "транспортировка"
+    },
+    {
+      "name": "эндокринолог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 10000,
+      "price_nonresident_kzt": 8000,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "ревматолог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 10000,
+      "price_nonresident_kzt": 8000,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "педиатр",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 7000,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "гастроэнтеролог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 7000,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "кардиолог",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 9000,
+      "price_nonresident_kzt": 7000,
+      "currency_original": "KZT",
+      "note": "взрослый"
+    },
+    {
+      "name": "Холтер ЭКГ",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 10000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "СМАД",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 10000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "ЭКГ с расшифровкой",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 3500,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "ЭКГ",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT"
+    },
+    {
+      "name": "Спирография",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 2000,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "Для мед. осмотра"
+    },
+    {
+      "name": "Спирография",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 3500,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "Обследование"
+    },
+    {
+      "name": "Спирография с бронхолитиком",
+      "code": null,
+      "unit": null,
+      "section": null,
+      "price_resident_kzt": 6500,
+      "price_nonresident_kzt": null,
+      "currency_original": "KZT",
+      "note": "Обследование"
+    }
+  ]
+}

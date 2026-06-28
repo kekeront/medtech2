@@ -8,3 +8,22 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Secrets / local env — never commit (only the .env.example template is tracked)
+.env
+.env.*
+!.env.example
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Large generated review files (dev artifacts)
+golden_review.html
+scan_preview.html
+
+# Per-session working state (senior autopilot)
+.claude/SESSION.md
+.claude/decisions.md
+.gstack/
