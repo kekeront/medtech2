@@ -79,6 +79,21 @@ export interface ItemPriceHistory {
   points: PriceHistoryPoint[]
 }
 
+export interface FxRate {
+  per_unit_kzt: number
+  quant: number
+  raw: number
+}
+
+export interface FxRates {
+  base: string // "KZT"
+  as_of: string | null // DD.MM.YYYY from NBK; null on static fallback
+  source: 'nbk' | 'last_good' | 'fallback'
+  stale: boolean
+  rates: Record<string, FxRate> // keys: "USD", "RUB"
+  error: string | null
+}
+
 export interface Stats {
   documents: number
   documents_by_status: Record<string, number>
@@ -182,6 +197,9 @@ function qs(params: Record<string, string | number | boolean | undefined>): stri
 
 export const api = {
   stats: () => request<Stats>('/stats'),
+
+  /** Live NBK exchange rates (KZT base): rates.USD / rates.RUB per 1 unit. */
+  fxRates: () => request<FxRates>('/fx/rates'),
 
   search: (q: string, limit = 50) =>
     request<SearchResult>(`/search${qs({ q, limit })}`),
