@@ -18,6 +18,10 @@ wheels/
 node_modules/
 .next/
 out/
+tsconfig.tsbuildinfo
+
+# Claude Code session state
+.claude/prompt-history.md
 
 # Large generated review files (dev artifacts)
 golden_review.html
@@ -27,3 +31,5 @@ scan_preview.html
 .claude/SESSION.md
 .claude/decisions.md
 .gstack/
+
+.claude/

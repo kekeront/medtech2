@@ -149,9 +149,15 @@ GEMINI_MAX_PAGES = int(os.getenv("GEMINI_MAX_PAGES", "300"))
 # blocks). It cleans TEXT only (name/unit/section) and FLAGS suspicious price/tier/junk rows
 # for the Проверка review page — it never edits numbers or codes.
 GEMINI_CLEAN = os.getenv("MEDARCHIVE_GEMINI_CLEAN", "1").lower() in ("1", "true", "yes")
-# Rows per cleanup call. Text-only output is small, so batches can be large; kept well under the
-# output-token ceiling. Batches run in parallel on GEMINI_WORKERS.
-GEMINI_CLEAN_BATCH = int(os.getenv("GEMINI_CLEAN_BATCH", "50"))
+# Rows per cleanup call. Text-only output is small (~100 tok/row), so keep batches LARGE: each
+# call costs one request against the (often tight, free-tier) Gemini rate limit, and the cleanup
+# shares that budget with the heavier per-page EXTRACTION calls. Few big calls = far less quota
+# contention, which is what was stalling bundle ingest. 200 rows ≈ 25k output tokens (< the 48k
+# ceiling); a truncated/failed call just fails-open and keeps the parsed rows.
+GEMINI_CLEAN_BATCH = int(os.getenv("GEMINI_CLEAN_BATCH", "200"))
+# Cleanup concurrency — kept modest (independent of the 24-wide extraction pool) so a burst of
+# cleanup calls doesn't spike 429s for the extractor running on the same quota.
+GEMINI_CLEAN_WORKERS = int(os.getenv("GEMINI_CLEAN_WORKERS", "6"))
 
 # FX rates to KZT used when a price is in a non-KZT currency (TZ 4.4).
 # In production these would be looked up per effective_date; static defaults are fine for MVP.

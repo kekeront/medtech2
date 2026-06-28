@@ -22,9 +22,9 @@ from pydantic import BaseModel
 from .config import (
     GEMINI_CLEAN,
     GEMINI_CLEAN_BATCH,
+    GEMINI_CLEAN_WORKERS,
     GEMINI_MAX_OUTPUT_TOKENS,
     GEMINI_MODEL,
-    GEMINI_WORKERS,
 )
 from .parsers.base import PriceRow
 from .parsers.gemini_pdf import _client, gemini_available
@@ -137,7 +137,7 @@ def clean_rows(rows: list[PriceRow]) -> tuple[list[PriceRow], list[str]]:
     step = max(1, GEMINI_CLEAN_BATCH)
     batches = [indexed[i : i + step] for i in range(0, len(indexed), step)]
     client = _client()
-    with ThreadPoolExecutor(max_workers=max(1, GEMINI_WORKERS)) as pool:
+    with ThreadPoolExecutor(max_workers=max(1, GEMINI_CLEAN_WORKERS)) as pool:
         results = list(pool.map(lambda b: _clean_batch(client, b), batches))
 
     n_text = n_flag = n_failed = 0
