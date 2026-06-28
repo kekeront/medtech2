@@ -122,12 +122,15 @@ def _clean_batch(client, batch: list[tuple[int, PriceRow]]) -> dict[int, Cleaned
     return {c.i: c for c in parsed}
 
 
-def clean_rows(rows: list[PriceRow]) -> tuple[list[PriceRow], list[str]]:
+def clean_rows(
+    rows: list[PriceRow], force: bool = False
+) -> tuple[list[PriceRow], list[str]]:
     """Clean text in place and flag suspicious rows. Returns (rows, warnings).
 
     The same row objects are returned (count and order preserved). Any batch that fails or
-    returns nothing is left untouched (fail-open), so this can only ever improve or no-op."""
-    if not GEMINI_CLEAN or not rows:
+    returns nothing is left untouched (fail-open), so this can only ever improve or no-op.
+    `force=True` runs even when GEMINI_CLEAN is off (used by the backfill script)."""
+    if (not GEMINI_CLEAN and not force) or not rows:
         return rows, []
     ok, why = gemini_available()
     if not ok:
